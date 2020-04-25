@@ -30,6 +30,12 @@ for i in range(1,10,2):
 int('10', 16)
 ```
 
+### format
+```
+In [12]: 'Taro={aaa} {bbb:x}'.format(aaa='hage', bbb=20)
+Out[12]: 'Taro=hage 14'python
+```
+
 ### 正規表現
 ```python
 In [58]: import re
