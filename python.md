@@ -31,7 +31,7 @@ int('10', 16)
 ```
 
 ### format
-```
+```python
 In [12]: 'Taro={aaa} {bbb:x}'.format(aaa='hage', bbb=20)
 Out[12]: 'Taro=hage 14'python
 ```
