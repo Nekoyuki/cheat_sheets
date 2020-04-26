@@ -83,3 +83,20 @@ Out[68]: 0
 In [69]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm").end()
 Out[69]: 22
 ```
+
+```.*```と```.*?```の違い。   
+なるべく多くマッチと、なるべく少なくマッチ。   
+
+```python
+In [108]: re.match('.*(\d+)', 'hage hage 12345').group(1)
+Out[108]: '5'
+
+In [109]: re.match('.*?(\d+)', 'hage hage 12345').group(1)
+Out[109]: '12345'
+```
+
+置換
+```python
+In [112]: re.sub('<a.*?>|</a>', '', '<a href="hige">hage hage 12345<a/>')
+Out[112]: 'hage hage 12345'
+```
