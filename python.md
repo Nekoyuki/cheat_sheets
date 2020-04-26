@@ -100,3 +100,24 @@ Out[109]: '12345'
 In [112]: re.sub('<a.*?>|</a>', '', '<a href="hige">hage hage 12345<a/>')
 Out[112]: 'hage hage 12345'
 ```
+
+### 判定
+値の比較
+```python
+< , <= , > , >=, ==, !=
+```
+
+オブジェクトの比較
+```pyhton
+is, is not, in, not in
+```
+
+論理演算子
+```python
+and, or, not
+```
+
+if文で```False```と判定されるもの
+bool(False), None, 0, 0.0, '', [], {}
+```
+
