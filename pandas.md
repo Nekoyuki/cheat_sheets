@@ -17,7 +17,7 @@ Out[96]:
 
 ### to_csv
 
-``python
+```python
 In [97]: df.to_csv()
 Out[97]: ',0,1\r\n0,Hage,Hige\r\n'
 
