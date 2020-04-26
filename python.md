@@ -60,32 +60,23 @@ Out[12]: 'Taro=hage 14'
 
 ### 正規表現
 ```python
-In [58]: import re
+In [152]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm")
+Out[152]: <re.Match object; span=(0, 22), match='Hanage=10cm, Mimige=20'>
 
-In [59]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm")
-Out[59]: <re.Match object; span=(0, 22), match='Hanage=10cm, Mimige=20'>
+In [153]: v = re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm")
 
-In [60]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm") is None
-Out[60]: False
+In [154]: bool(v)
+Out[154]: True
 
-In [62]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm").group()
-Out[62]: 'Hanage=10cm, Mimige=20'
+In [155]: v.group(1)
+Out[155]: '10'
 
-In [63]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm").group(1)
-Out[63]: '10'
-
-In [64]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm").group(2)
-Out[64]: '20'
-
-In [68]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm").start()
-Out[68]: 0
-
-In [69]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm").end()
-Out[69]: 22
+In [156]: v.group(2)
+Out[156]: '20'
 ```
 
-```.*```と```.*?```の違い。   
-なるべく多くマッチと、なるべく少なくマッチ。   
+```.*```と```.*?```の違い。
+なるべく多くマッチと、なるべく少なくマッチ。
 
 ```python
 In [108]: re.match('.*(\d+)', 'hage hage 12345').group(1)
