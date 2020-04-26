@@ -118,6 +118,7 @@ and, or, not
 ```
 
 if文で```False```と判定されるもの
+```python
 bool(False), None, 0, 0.0, '', [], {}
 ```
 
