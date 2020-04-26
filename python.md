@@ -1,3 +1,9 @@
+### 開始の呪文
+
+```python
+if __name__ == '__main__':
+```
+
 ### ディレクトリの中のファイルを取得してまわす。
 
 ```python
@@ -9,6 +15,22 @@ for i in p.glob("*.csv"):
     print(i.cwd())
     df = pd.read_csv(i)
 ```
+
+```python
+In [84]: from pathlib import Path
+
+In [85]: p = Path('.')
+
+In [89]: g = p.glob('*.csv')
+
+In [90]: g.__next__()
+Out[90]: WindowsPath('aaa.csv')
+
+In [91]: g.__next__()
+Out[91]: WindowsPath('bbb.csv')
+
+```
+
 
 ### ファイルを読み込む。
 ```python
