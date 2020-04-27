@@ -121,7 +121,7 @@ dtype: object
 
 ### セル内の値の分割
 
-```
+```python
 In [335]: df
 Out[335]:
           1
