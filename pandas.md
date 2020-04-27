@@ -36,7 +36,7 @@ In [300]: df.loc[0,0] = 'h'
 In [301]: df
 Out[301]:
    0
-0  h 
+0  h
 ```
 
 ### iloc 行番号、列番号で抽出
@@ -97,6 +97,60 @@ In [134]: df[j]
 Out[134]:
    1  2  3  4  5
 1  f  g  h  i  j
+```
+
+### セル内の値の結合
+
+```python
+In [324]: df[['1','2']]
+Out[324]:
+   1  2
+-
+1  a  b
+2  f  g
+3  k  l
+
+In [325]: df[['1','2']].apply(lambda x: '{}_{}'.format(x[0], x[1]), axis=1)
+Out[325]:
+-
+1    a_b
+2    f_g
+3    k_l
+dtype: object
+```
+
+### セル内の値の分割
+
+```
+In [335]: df
+Out[335]:
+          1
+-
+1  <a>a</a>
+2  <a>f</a>
+
+In [337]: df['1'].str.split('/')
+Out[337]:
+-
+1    [<a>a<, a>]
+2    [<a>f<, a>]
+Name: 1, dtype: object
+
+In [339]: df['1'].str.extract('(<a>)(.)(</a>)', expand=True)
+Out[339]:
+     0  1     2
+-
+1  <a>  a  </a>
+2  <a>  f  </a>
+
+In [339]:
+
+In [340]: df['1'].str.extract('<a>(.)</a>', expand=True)
+Out[340]:
+   0
+-
+1  a
+2  f
 ```
 
 ### to_csv
