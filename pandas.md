@@ -25,21 +25,21 @@ In [277]: df.columns
 Out[277]: Index(['1', '2', '3', '4', '5'], dtype='object')
 ```
 
-### loc
-```df```が空の場合できる
+### loc ラベルで指定する。
+空の```df```に値を代入できる。
 
 ```python
-In [94]: df.loc[0,0] = 'Hage'
+In [299]: df = pd.DataFrame()
 
-In [95]: df.loc[0,1] = 'Hige'
+In [300]: df.loc[0,0] = 'h'
 
-In [96]: df
-Out[96]:
-      0     1
-0  Hage  Hige
+In [301]: df
+Out[301]:
+   0
+0  h 
 ```
 
-### 行番号、列番号で抽出
+### iloc 行番号、列番号で抽出
 ```python
 In [182]: df.iloc[:, [0,1]]
 Out[182]:
