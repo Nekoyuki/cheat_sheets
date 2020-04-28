@@ -60,6 +60,60 @@ Out[184]: 'i'
 
 ### 条件にあった行列
 ```python
+In [131]: df[(df['1'] == 'f') & (df['3'] == 'h')]   # 条件にあった行抽出
+Out[131]:
+   1  2  3  4  5
+1  f  g  h  i  j
+
+In [132]: df[['1', '3']].apply(lambda x: True if x[0] == 'f' and x[1] == 'h' else False, axis=1)
+Out[132]:
+0    False
+1     True
+2    False
+dtype: bool
+
+In [133]: j = df[['1', '3']].apply(lambda x: True if x[0] == 'f' and x[1] == 'h' else False, axis=1)
+
+In [134]: df[j]
+Out[134]:
+   1  2  3  4  5
+1  f  g  h  i  j
+```
+
+locを使用して、セルにアクセス
+```python
+In [85]: df
+Out[85]:
+   1  2  3  4  5
+-
+1  a  b  c  d  e
+2  a  g  c  i  f
+3  a  l  m  n  e
+4  b  b  c  d  e
+
+In [86]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3']
+Out[86]:
+-
+2    c
+Name: 3, dtype: object
+
+In [93]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3'].values[0]
+Out[93]: 'c'
+
+In [98]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3'] = '8'
+
+In [99]: df
+Out[99]:
+   1  2  3  4  5
+-
+1  a  b  c  d  e
+2  a  g  8  i  f
+3  a  l  m  n  e
+4  b  b  c  d  e
+```
+
+### ドロップ
+```python
 In [128]: df.drop(1)    # 行のドロップ
 Out[128]:
    1  2  3  4  5
@@ -78,25 +132,6 @@ Out[130]:
 0  b  c  d  e
 1  g  h  i  j
 2  l  m  n  o
-
-In [131]: df[(df['1'] == 'f') & (df['3'] == 'h')]   # 条件にあった行列抽出
-Out[131]:
-   1  2  3  4  5
-1  f  g  h  i  j
-
-In [132]: df[['1', '3']].apply(lambda x: True if x[0] == 'f' and x[1] == 'h' else False, axis=1)
-Out[132]:
-0    False
-1     True
-2    False
-dtype: bool
-
-In [133]: j = df[['1', '3']].apply(lambda x: True if x[0] == 'f' and x[1] == 'h' else False, axis=1)
-
-In [134]: df[j]
-Out[134]:
-   1  2  3  4  5
-1  f  g  h  i  j
 ```
 
 ### セル内の値の結合
