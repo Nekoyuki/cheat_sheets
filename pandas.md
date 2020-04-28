@@ -80,7 +80,7 @@ Out[134]:
 1  f  g  h  i  j
 ```
 
-locを使用して、セルにアクセス
+locを使用して、アクセス、一番応用が効く
 ```python
 In [85]: df
 Out[85]:
@@ -91,16 +91,28 @@ Out[85]:
 3  a  l  m  n  e
 4  b  b  c  d  e
 
-In [86]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3']
+In [166]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), :]    # 行選択
+Out[166]:
+   1  2  3  4  5
+-
+2  a  g  c  i  f
+
+In [167]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3':'5']  # 行選択＋列選択
+Out[167]:
+   3  4  5
+-
+2  c  i  f
+
+In [86]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3']   # セル選択
 Out[86]:
 -
 2    c
 Name: 3, dtype: object
 
-In [93]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3'].values[0]
+In [93]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3'].values[0]     # 値アクセス
 Out[93]: 'c'
 
-In [98]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3'] = '8'
+In [98]: df.loc[(df['1'] == 'a') & (df['2'] == 'g'), '3'] = '8'     # 値書き込み
 
 In [99]: df
 Out[99]:
@@ -110,16 +122,24 @@ Out[99]:
 2  a  g  8  i  f
 3  a  l  m  n  e
 4  b  b  c  d  e
+
+In [169]: df.loc[~(df['1'] == 'a'), :]  # 否定
+Out[169]:
+   1  2  3  4  5
+-
+4  b  b  c  d  e
+
+In [170]: df.loc[(df['1'] == 'a') | (df['2'] == 'g'), :]    # OR
+Out[170]:
+   1  2  3  4  5
+-
+1  a  b  c  d  e
+2  a  g  c  i  f
+3  a  l  m  n  e
 ```
 
 ### ドロップ
 ```python
-In [128]: df.drop(1)    # 行のドロップ
-Out[128]:
-   1  2  3  4  5
-0  a  b  c  d  e
-2  k  l  m  n  o
-
 In [129]: df.drop([1])  # 行のドロップ
 Out[129]:
    1  2  3  4  5
