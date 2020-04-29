@@ -244,6 +244,12 @@ Out[35]:
 5        b      6
 ```
 
+### お絵描き
+Boxplot + figsize変更 + Y軸調整
+```python
+In [46]: plt.figure(figsize=[5,5]); plt.ylim([0,3]); df.boxplot()
+```
+
 ### to_csv
 
 ```python
