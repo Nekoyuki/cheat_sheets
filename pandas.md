@@ -221,3 +221,5 @@ In [98]: print(df.to_csv())
 
 ### Links
 https://pandas.pydata.org/pandas-docs/stable/index.html
+
+http://sinhrks.hatenablog.com/entry/2015/04/28/235430
