@@ -1,7 +1,8 @@
 ### 起動
 
 ```python
-run -d hoge.py 
+run -d hoge.py  # スクリプトのデバック
+debug hoge()    # 関数のデバック
 ```
 
 ### コマンド
