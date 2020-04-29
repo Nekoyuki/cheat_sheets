@@ -208,6 +208,42 @@ Out[340]:
 2  f
 ```
 
+### カラム（シリーズ）をループする
+```python
+In [32]: df
+Out[32]:
+   a  b
+0  1  2
+1  3  4
+2  5  6
+
+In [33]: for c, d in df.iteritems():
+    ...:     print(c, d.max())
+    ...:
+a 5
+b 6
+
+In [34]: for c, d in df.iterrows():
+    ...:     print(c, d.max())
+    ...:
+0 2
+1 4
+2 6
+```
+
+### シリーズを合体して１つにする
+```python
+In [35]: df.melt()
+Out[35]:
+  variable  value
+0        a      1
+1        a      3
+2        a      5
+3        b      2
+4        b      4
+5        b      6
+```
+
 ### to_csv
 
 ```python
