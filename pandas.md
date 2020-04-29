@@ -244,6 +244,12 @@ Out[35]:
 5        b      6
 ```
 
+### ソート、インデックスを振り直し
+```python
+df.sort_values('hage', inplace=True)    # ソート
+df.reset_index(drop=True)               # インデックス振り直し
+```
+
 ### お絵描き
 Boxplot + figsize変更 + Y軸調整
 ```python
