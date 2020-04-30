@@ -41,14 +41,15 @@ Out[81]:
 4  sepal_length    5.0
 ```
 
-### ラベルの調整
-
-https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html
+### 調整
 
 ```python
-In [82]: sns.violinplot(data=dfx, x='variable', y='value')
-plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white'); sns.violinplot(data=dfx, x='variable', y='value')``
+plt.figure(figsize=[5,5])   # キャンバスサイズ
+plt.ylim([0,3])
+plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')
 ```
+
+[tick_params](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html)
 
 ### リンク
 
