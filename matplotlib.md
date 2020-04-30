@@ -1,7 +1,8 @@
 
 ### お絵描き
 Boxplot/hist + figsize変更 + Y軸調整
-```
+
+```python
 In [63]: import seaborn as sns
 
 In [64]: df = sns.load_dataset('iris')
@@ -15,7 +16,9 @@ In [68]: import matplotlib.pyplot as plt
 In [46]: plt.figure(figsize=[5,5]); plt.ylim([0,3]); df.boxplot()
 ```
 
-violinploati、x/y/data、をきちんと指定する必要あり
+### violinplot
+x/y/data、をきちんと指定する必要あり
+
 ```python
 In [78]: df.head()
 Out[78]:
@@ -36,6 +39,17 @@ Out[81]:
 2  sepal_length    4.7
 3  sepal_length    4.6
 4  sepal_length    5.0
-
-In [82]: sns.violinplot(data=dfx, x='variable', y='value')
 ```
+
+### ラベルの調整
+
+https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html
+
+```python
+In [82]: sns.violinplot(data=dfx, x='variable', y='value')
+plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white'); sns.violinplot(data=dfx, x='variable', y='value')``
+```
+
+### リンク
+
+https://matplotlib.org/3.1.0/index.html
