@@ -250,12 +250,6 @@ df.sort_values('hage', inplace=True)    # ソート
 df.reset_index(drop=True)               # インデックス振り直し
 ```
 
-### お絵描き
-Boxplot + figsize変更 + Y軸調整
-```python
-In [46]: plt.figure(figsize=[5,5]); plt.ylim([0,3]); df.boxplot()
-```
-
 ### to_csv
 
 ```python
