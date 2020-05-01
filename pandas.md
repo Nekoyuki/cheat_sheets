@@ -261,6 +261,16 @@ In [98]: print(df.to_csv())
 0,Hage,Hige
 ```
 
+### データフレーム中で最小値を探す
+```python
+In [135]: i = [0, 0, 99999]
+     ...: for c, d in df.drop('species', axis=1).items():
+     ...:     for r, s in d.items():
+     ...:         i = [r, c, s] if i[2] > s else i
+     ...: print(i)
+[9, 'petal_width', 0.1]
+```
+
 ### Links
 https://pandas.pydata.org/pandas-docs/stable/index.html
 
