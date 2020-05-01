@@ -38,15 +38,16 @@ Out[81]:
 1  sepal_length    4.9
 2  sepal_length    4.7
 3  sepal_length    4.6
-4  sepal_length    5.0
+
+In [87]: sns.violinplot(data=dfx, x='variable', y='value')
 ```
 
 ### 調整
 
 ```python
 plt.figure(figsize=[5,5])   # キャンバスサイズ
-plt.ylim([0,3])
-plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')
+plt.ylim([0,3])             # Yの値の最小、最大値
+plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')     # 軸ラベルの調整
 ```
 
 [tick_params](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html)
