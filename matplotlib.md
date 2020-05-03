@@ -17,7 +17,7 @@ In [46]: plt.figure(figsize=[5,5]); plt.ylim([0,3]); df.boxplot()
 ```
 
 ### violinplot
-x/y/data、をきちんと指定する必要あり
+x/y/data、をきちんと指定する必要あり。meltで一次元のシリーズに変換要。
 
 ```python
 In [78]: df.head()
@@ -45,9 +45,14 @@ In [87]: sns.violinplot(data=dfx, x='variable', y='value')
 ### 調整
 
 ```python
-plt.figure(figsize=[5,5])   # キャンバスサイズ
-plt.ylim([0,3])             # Yの値の最小、最大値
+plt.figure(figsize=[5,5])           # キャンバスサイズ
+plt.titl('hageX', fontsize=30)      # タイトル
+plt.ylim([0,3])                     # Yの値の最小、最大値
+plt.xlable('hage', fontsize=30)     # Xラベル
 plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')     # 軸ラベルの調整
+plt.yticks([0, 0.5, 1.0])           # Yグリッド
+plt.tight_layout()                  # うまいこと出力図の範囲を綺麗に収める
+plt.text(2.0, -0.4, 'hage', fontsize=15)    # テキスト
 ```
 
 [tick_params](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html)
