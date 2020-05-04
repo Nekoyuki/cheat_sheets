@@ -208,7 +208,7 @@ Out[340]:
 2  f
 ```
 
-### カラム（シリーズ）をループする
+### カラム、ロウをループする
 ```python
 In [32]: df
 Out[32]:
@@ -223,8 +223,8 @@ In [33]: for c, d in df.iteritems():
 a 5
 b 6
 
-In [34]: for c, d in df.iterrows():
-    ...:     print(c, d.max())
+In [34]: for r, d in df.iterrows():
+    ...:     print(r, d.max())
     ...:
 0 2
 1 4
@@ -272,6 +272,6 @@ In [135]: i = [0, 0, 99999]
 ```
 
 ### Links
-https://pandas.pydata.org/pandas-docs/stable/index.html
+https://pandas.pydata.org/docs/
 
 http://sinhrks.hatenablog.com/entry/2015/04/28/235430
