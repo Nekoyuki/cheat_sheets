@@ -62,5 +62,15 @@ echo $?
 test "abc" = "abc" ; echo $?    # 例
 ```
 
+### suffixを削る
+```bash
+BASENAME=`basename ${0%.*}`
+```
+
+### Date
+```bash
+date "+%Y_%m_%d_%H_%M"
+```
+
 ### リンク
 https://shellscript.sunone.me/
