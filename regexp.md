@@ -21,6 +21,17 @@
 |縦線|和集合（または）|-|a縦線b|a,b|c,d|
 |()|グループ化|-|(abc)+|abc,abcabc|a,ab,abcd|
 
+### 例
+
+[0-9] 数字 {5} ５回繰り返し () レジスタ登録。 \1 レジスタ内容読み出し。
+
+```python
+re.sub(r'\(([0-9]{5})\).*', r'\1', '(00001) hage')
+Out[151]: '00001'
+```
+
+### Links
 
 https://qiita.com/luohao0404/items/7135b2b96f9b0b196bf3
 http://www.tohoho-web.com/js/regexp.htm
+https://regex101.com/
