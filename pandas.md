@@ -208,6 +208,30 @@ Out[340]:
 2  f
 ```
 
+### 正規表現で置換
+```python
+In [147]: df = pd.DataFrame(['abc', 'def'])
+
+In [148]: df
+Out[148]:
+     0
+0  abc
+1  def
+
+In [149]: df.replace(r'a.*', r'ggg', regex=True)
+Out[149]:
+     0
+0  ggg
+1  def
+
+In [150]: df.applymap(lambda x: re.sub(r'a.*', r'ggg', x))
+Out[150]:
+     0
+0  ggg
+1  def
+```
+
+
 ### カラム、ロウをループする
 ```python
 In [32]: df
