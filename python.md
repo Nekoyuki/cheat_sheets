@@ -5,6 +5,15 @@ if __name__ == '__main__':
 ```
 
 ### ディレクトリの中のファイルを取得してまわす。
+```glob```の場合
+```python
+In [13]: import glob
+
+In [14]: glob.glob('*.txt')
+Out[14]: ['hage.txt', 'hige.txt']
+```
+
+```pathlib```の場合
 
 ```python
 import pandas as pd
@@ -49,7 +58,8 @@ for i in range(1,10,2):
 
 ### 16進数
 ```python
-int('10', 16)
+In [5]: int('a', 16)
+Out[5]: 10
 ```
 
 ### format
@@ -59,6 +69,9 @@ Out[12]: 'Taro=hage 14'
 ```
 
 ### 正規表現
+
+マッチ
+
 ```python
 In [152]: re.match('.*?(\d+).*?(\d+).*?', "Hanage=10cm, Mimige=20cm, Hige=30cm")
 Out[152]: <re.Match object; span=(0, 22), match='Hanage=10cm, Mimige=20'>
@@ -90,6 +103,12 @@ Out[109]: '12345'
 ```python
 In [112]: re.sub('<a.*?>|</a>', '', '<a href="hige">hage hage 12345<a/>')
 Out[112]: 'hage hage 12345'
+```
+
+### 内包表記 
+```python
+In [3]: [i for i in range(0,5,1) if i % 2 == 0]
+Out[3]: [0, 2, 4]
 ```
 
 ### 判定
