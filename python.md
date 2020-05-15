@@ -65,7 +65,7 @@ Out[5]: 10
 ### format
 ```python
 In [28]: 'Taro={looks} id={id:04d}'.format(looks='hage', id=2)
-Out[28]: 'Taro=hage id=0002'``python
+Out[28]: 'Taro=hage id=0002'
 ```
 
 ### 正規表現
