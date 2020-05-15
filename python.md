@@ -63,9 +63,9 @@ Out[5]: 10
 ```
 
 ### format
-```python
-In [12]: 'Taro={aaa} {bbb:x}'.format(aaa='hage', bbb=20)
-Out[12]: 'Taro=hage 14'
+```
+In [28]: 'Taro={looks} id={id:04d}'.format(looks='hage', id=2)
+Out[28]: 'Taro=hage id=0002'``python
 ```
 
 ### 正規表現
