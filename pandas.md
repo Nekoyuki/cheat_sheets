@@ -268,10 +268,16 @@ Out[35]:
 5        b      6
 ```
 
+### グルーピング
+```python
+df.groupby('pin').mean()
+```
+
 ### ソート、インデックスを振り直し
 ```python
-df.sort_values('hage', inplace=True)    # ソート
-df.reset_index(drop=True)               # インデックス振り直し
+df.sort_values('hage', inplace=True)        # ソート
+df.reset_index(drop=True)                   # インデックス振り直し
+df.columns = sorted(df.columns.to_list())   # カラム名ソート
 ```
 
 ### to_csv
