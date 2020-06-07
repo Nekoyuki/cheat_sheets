@@ -16,6 +16,18 @@ In [68]: import matplotlib.pyplot as plt
 In [46]: plt.figure(figsize=[5,5]); plt.ylim([0,3]); df.boxplot()
 ```
 
+```fig```, ```ax``` を使う場合
+
+```python
+In [47]: fig = plt.figure(); ax = fig.add_subplot(111); ax.tick_params(colors='white'); df.plot(ax=ax)
+```
+
+```lenged``` を外に出す
+
+```python
+In [48]: fig, ax = plt.subplots(); df.plot(ax=ax); ax.legend(bbox_to_anchor=(1.4,1), loc='upper right')
+```
+
 ### violinplot
 x/y/data、をきちんと指定する必要あり。meltで一次元のシリーズに変換要。
 
@@ -46,7 +58,7 @@ In [87]: sns.violinplot(data=dfx, x='variable', y='value')
 
 ```python
 plt.figure(figsize=[5,5])           # キャンバスサイズ
-plt.titl('hageX', fontsize=30)      # タイトル
+plt.title('hageX', fontsize=30)     # タイトル
 plt.ylim([0,3])                     # Yの値の最小、最大値
 plt.xlable('hage', fontsize=30)     # Xラベル
 plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')     # 軸ラベルの調整
