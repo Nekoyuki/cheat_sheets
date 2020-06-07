@@ -25,6 +25,14 @@ In [277]: df.columns
 Out[277]: Index(['1', '2', '3', '4', '5'], dtype='object')
 ```
 
+[seaborn-data](https://github.com/mwaskom/seaborn-data) のデータを使う場合
+
+```python
+In [35]: import seaborn as sns
+
+In [36]: sns.load_dataset('iris')
+```
+
 ### loc ラベルで指定する。
 空の```df```に値を代入できる。
 
@@ -255,7 +263,12 @@ In [34]: for r, d in df.iterrows():
 2 6
 ```
 
-### シリーズを合体して１つにする
+### グルーピング
+```python
+df.groupby('pin').mean()
+```
+
+### シリーズを合体して１つにする ```melt```
 ```python
 In [35]: df.melt()
 Out[35]:
@@ -268,9 +281,39 @@ Out[35]:
 5        b      6
 ```
 
-### グルーピング
+### ピボットテーブル ```pivot_table```
+```melt```の逆
+
 ```python
-df.groupby('pin').mean()
+In [42]: tips = sns.load_dataset('tips')
+
+In [45]: tips
+Out[45]:
+     total_bill   tip     sex smoker   day    time  size
+0         16.99  1.01  Female     No   Sun  Dinner     2
+1         10.34  1.66    Male     No   Sun  Dinner     3
+2         21.01  3.50    Male     No   Sun  Dinner     3
+3         23.68  3.31    Male     No   Sun  Dinner     2
+4         24.59  3.61  Female     No   Sun  Dinner     4
+..          ...   ...     ...    ...   ...     ...   ...
+239       29.03  5.92    Male     No   Sat  Dinner     3
+240       27.18  2.00  Female    Yes   Sat  Dinner     2
+241       22.67  2.00    Male    Yes   Sat  Dinner     2
+242       17.82  1.75    Male     No   Sat  Dinner     2
+243       18.78  3.00  Female     No  Thur  Dinner     2
+
+[244 rows x 7 columns]
+
+In [46]: tips.pivot_table(columns='day', values='total_bill', index='size')
+Out[46]:
+day        Thur        Fri        Sat        Sun
+size
+1     10.070000   8.580000   5.160000        NaN
+2     15.156875  16.321875  16.837170  17.560000
+3     19.160000  15.980000  25.509444  22.184000
+4     29.950000  40.170000  29.876154  26.688333
+5     41.190000        NaN  28.150000  27.000000
+6     30.383333        NaN        NaN  48.170000
 ```
 
 ### ソート、インデックスを振り直し

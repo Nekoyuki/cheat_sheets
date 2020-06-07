@@ -57,6 +57,12 @@ plt.text(2.0, -0.4, 'hage', fontsize=15)    # テキスト
 
 [tick_params](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html)
 
+### 画像の保存
+
+```python
+tips.groupby('day').mean()['total_bill'].plot(kind='bar').get_figure().savefig('hage.png')
+```
+
 ### リンク
 
 https://matplotlib.org/3.1.0/index.html
