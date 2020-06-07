@@ -28,6 +28,10 @@ In [47]: fig = plt.figure(); ax = fig.add_subplot(111); ax.tick_params(colors='w
 In [48]: fig, ax = plt.subplots(); df.plot(ax=ax); ax.legend(bbox_to_anchor=(1.4,1), loc='upper right')
 ```
 
+```savefig()```する時に、```legend```がはみ出ないようにするおまじない
+```python
+In [49]: fig, ax = plt.subplots(); df.plot(ax=ax); lgd = ax.legend(bbox_to_anchor=(1.4,1), loc='upper right'); fig.savefig('aaa.png', bbox_extra_artists=(lgd,), bbox_inches='tight')
+```
 ### violinplot
 x/y/data、をきちんと指定する必要あり。meltで一次元のシリーズに変換要。
 
