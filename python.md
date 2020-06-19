@@ -111,6 +111,15 @@ In [3]: [i for i in range(0,5,1) if i % 2 == 0]
 Out[3]: [0, 2, 4]
 ```
 
+```Grep```ライク
+```python
+In [6]: lst
+Out[6]: ['hage', 'hige', 'hoge', 'aaa', 'bbb', 'ccc']
+
+In [8]: [i for i in lst if 'h' in i]
+Out[8]: ['hage', 'hige', 'hoge']``
+```
+
 ### 判定
 値の比較
 ```python
