@@ -74,3 +74,6 @@ date "+%Y_%m_%d_%H_%M"
 
 ### リンク
 https://shellscript.sunone.me/
+
+Bashにおける括弧類の意味
+https://qiita.com/yohm/items/3527d517768402efbcb6
