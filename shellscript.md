@@ -6,12 +6,12 @@
 
 文字列比較
 ```bash
-=, !=
+=, !=, =~ (regexp)
 ```
 
 ファイル比較
 ```bash
--nt, -ot
+-nt (newer), -ot (older)
 ```
 
 その他
@@ -35,7 +35,7 @@ AND/OR/NOT
 
 if文
 ```bash
-if [ -s /tmp/hage.txt ];then
+if [[ -s /tmp/hage.txt ]];then
     :
 elif
     :
@@ -56,12 +56,6 @@ done
 
 ```
 
-### 終了ステータス
-```bash
-echo $?
-test "abc" = "abc" ; echo $?    # 例
-```
-
 ### suffixを削る
 ```bash
 BASENAME=`basename ${0%.*}`
@@ -72,8 +66,29 @@ BASENAME=`basename ${0%.*}`
 date "+%Y_%m_%d_%H_%M"
 ```
 
+### 計算 ```(( ))```で囲む
+```bash
+$((++i))    # インクリメント
+```
+
+### 特殊変数
+変数名|設定される値|
+|-|-|
+$?|終了ステータス|
+$!|バックグラウンドで実行されたコマンドのプロセスID|
+$-|set コマンド、もしくはシェルの起動時のフラグの一覧|
+$$|コマンド自身のPID(プロセスID)|
+$#|実行時に指定された引数の数|
+$@ $\*|シェルスクリプト実行時、もしくはset コマンド実行時の全パラメータ|
+$LINENO|この変数を使用している行の行番号|
+${PIPESTATUS[@]}|パイプで連結した各コマンドの終了ステータス|
+$1, $2, …, ${10}, …|setコマンドあるいは、位置パラメータ|
+
 ### リンク
 https://shellscript.sunone.me/
 
-Bashにおける括弧類の意味
-https://qiita.com/yohm/items/3527d517768402efbcb6
+[Bashにおける括弧類の意味](https://qiita.com/yohm/items/3527d517768402efbcb6)
+
+[Bash $((算術式)) のすべて - A 基本編](https://qiita.com/akinomyoga/items/9761031c551d43307374)
+
+[bash 配列まとめ](https://qiita.com/b4b4r07/items/e56a8e3471fb45df2f59)
