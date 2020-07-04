@@ -141,3 +141,9 @@ if文で```False```と判定されるもの
 bool(False), None, 0, 0.0, '', [], {}
 ```
 
+### Tips
+反転
+```python
+'hagehage'[::-1]
+```
+
