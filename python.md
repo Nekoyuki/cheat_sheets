@@ -144,6 +144,7 @@ bool(False), None, 0, 0.0, '', [], {}
 ### Tips
 反転
 ```python
-'hagehage'[::-1]
+In [12]: 'hagehagehage'[::-1]
+Out[12]: 'egahegahegah'
 ```
 

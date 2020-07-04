@@ -323,6 +323,21 @@ df.reset_index(drop=True)                   # インデックス振り直し
 df.columns = sorted(df.columns.to_list())   # カラム名ソート
 ```
 
+### カラムの並び替え
+```python
+In [8]: df = pd.DataFrame(data=[[1,2,3,4,5]], columns=[8,7,3,2,0])
+
+In [9]: df
+Out[9]:
+   8  7  3  2  0
+0  1  2  3  4  5
+
+In [12]: df[sorted(df.columns)]
+Out[12]:
+   0  2  3  7  8
+0  5  4  3  2  1
+```
+
 ### to_csv
 
 ```python
