@@ -8,8 +8,11 @@ depmod          # カーネルモジュールの依存関係リストを更新
 ```bash
 ifconfig
 
-more /etc/hostname                                 # ホスト名
-more /etc/sysconfig/network-scripts/ifcfg-eth0     # eth0の設定ファイル
+more /etc/hostname                                  # ホスト名
+nmcli general hostname hoge                         # ホスト名変更
+nmcli device                                        # デバイス確認
+
+more /etc/sysconfig/network-scripts/ifcfg-eth0      # eth0の設定ファイル
 
 systemctl status network
 systemctl status NetworkManager
@@ -18,7 +21,7 @@ systemctl status NetworkManager
 ```ifcfg-eth0```の例, DHCPの場合
 ```bash
 TYPE=Ethernet
-BOOTPROTO=dhcp
+BOOTPROTO=dhcp              # DCHPか固定IPか, dhcp/none
 DEFROUTE=yes
 PEERDNS=yes
 PEERROUTES=yes
@@ -30,7 +33,7 @@ IPV6_PEERDNS=yes
 IPV6_PEERROUTES=yes
 IPV6_FAILURE_FATAL=no
 NAME=enp0s3
-ONBOOT=yes
+ONBOOT=yes                  # NICの自動起動, on/off
 ```
 
 固定IPの場合
@@ -38,7 +41,7 @@ ONBOOT=yes
 BOOTPROTO=none
 IPADDR="172.16.0.10"
 GATEWAY="172.16.0.1"
-DNS1="172.16.0.1"
+DNS1="172.16.0.1"           # DNSサーバ
 ```
 
 
@@ -70,6 +73,8 @@ yum install lshw
 yum install pciuti      # for lspci
 yum install usbutils    # for lsusb
 yum install ethtool
+yum install net-tools   # ifconfig/route/netstat/arp
+yum install iproute2    # ip addr/ip route/ss/ip neighbor
 ```
 
 応用   
