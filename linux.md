@@ -8,11 +8,39 @@ depmod          # カーネルモジュールの依存関係リストを更新
 ```bash
 ifconfig
 
+more /etc/hostname                                 # ホスト名
 more /etc/sysconfig/network-scripts/ifcfg-eth0     # eth0の設定ファイル
 
 systemctl status network
 systemctl status NetworkManager
 ```
+
+```ifcfg-eth0```の例, DHCPの場合
+```bash
+TYPE=Ethernet
+BOOTPROTO=dhcp
+DEFROUTE=yes
+PEERDNS=yes
+PEERROUTES=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_PEERDNS=yes
+IPV6_PEERROUTES=yes
+IPV6_FAILURE_FATAL=no
+NAME=enp0s3
+ONBOOT=yes
+```
+
+固定IPの場合
+```bash
+BOOTPROTO=none
+IPADDR="172.16.0.10"
+GATEWAY="172.16.0.1"
+DNS1="172.16.0.1"
+```
+
 
 リンク   
 [@IT/ ネットワーク環境の確認](https://www.atmarkit.co.jp/ait/articles/0109/29/news004.html)
@@ -70,7 +98,6 @@ modprobe new_hoge
 modinfo new_hoge
 ```
 
-
 リンク   
 [【 lshw 】コマンド――ハードウェアの情報を表示する](https://www.atmarkit.co.jp/ait/articles/1904/11/news023.html)
 
@@ -87,3 +114,18 @@ modinfo new_hoge
 [【Linux】対処法: 有線LANのドライバe1000eが動作しない。](http://datyotosanpo.blog.fc2.com/blog-entry-190.html?id=VDPD#VDPD)
 
 [Marvell Driver Downloads](https://driverdownloads.aquantia.com/)
+
+### 起動/Boot
+```bash
+/etc/default/grub   # 基本設定ファイル
+
+cp /boot/grub2/grub.cfg /boot/grub2/grub.cfg.org    # backup
+grub2-mkconfig -o /boot/grub2/grub.cfg              # 
+```
+
+リンク   
+[CentOS7 ブートローダ周り](https://qiita.com/moukuto/items/c78f29f9bd1221baffca)
+
+[【 grub2-set-default／grub-set-default 】コマンド――GRUB 2のデフォルト起動メニューを設定する](https://www.atmarkit.co.jp/ait/articles/1901/31/news048.html)
+
+
