@@ -14,6 +14,8 @@ nmcli device                                        # デバイス確認
 
 more /etc/sysconfig/network-scripts/ifcfg-eth0      # eth0の設定ファイル
 
+more /etc/resolv.conf                               # DNS設定, systemctl restart network
+
 systemctl status network
 systemctl status NetworkManager
 ```
