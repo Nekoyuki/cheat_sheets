@@ -1,5 +1,6 @@
 ### コマンド
 ```bash
+hostnamectl     # カーネルやOS情報
 uname -r        # カーネルバージョン表示
 depmod          # カーネルモジュールの依存関係リストを更新
 ```
@@ -7,17 +8,21 @@ depmod          # カーネルモジュールの依存関係リストを更新
 ### ネットワーク環境の確認
 ```bash
 ifconfig
+ip a
+
+ip route                                            # ルーティングテーブル確認
 
 more /etc/hostname                                  # ホスト名
-nmcli general hostname hoge                         # ホスト名変更
-nmcli device                                        # デバイス確認
-
 more /etc/sysconfig/network-scripts/ifcfg-eth0      # eth0の設定ファイル
 
 more /etc/resolv.conf                               # DNS設定, systemctl restart network
+nslookup
 
 systemctl status network
+
 systemctl status NetworkManager
+nmcli general hostname hoge                         # ホスト名変更
+nmcli device                                        # デバイス確認
 ```
 
 ```ifcfg-eth0```の例, DHCPの場合
@@ -36,13 +41,15 @@ IPV6_PEERROUTES=yes
 IPV6_FAILURE_FATAL=no
 NAME=enp0s3
 ONBOOT=yes                  # NICの自動起動, on/off
+NM_CONTROLLED=NO            # NetworkManagerを使用しない
 ```
 
 固定IPの場合
 ```bash
 BOOTPROTO=none
 IPADDR="172.16.0.10"
-GATEWAY="172.16.0.1"
+GATEWAY="172.16.0.1"        # デフォルトゲートウエイ設定
+DEFROUTE=yes                # デフォルトゲートウエイ設定
 DNS1="172.16.0.1"           # DNSサーバ
 ```
 
@@ -51,6 +58,8 @@ DNS1="172.16.0.1"           # DNSサーバ
 [@IT/ ネットワーク環境の確認](https://www.atmarkit.co.jp/ait/articles/0109/29/news004.html)
 
 [ifconfigの出力結果に書いてあること](https://qiita.com/pe-ta/items/aff8db72530c6baa11b2)
+
+[CentOS7 ifcfg設定](https://qiita.com/liqsuq/items/50173a587029e5d6ca23)
 
 ### ハードウエハ情報の確認
 基本   
@@ -75,8 +84,10 @@ yum install lshw
 yum install pciuti      # for lspci
 yum install usbutils    # for lsusb
 yum install ethtool
-yum install net-tools   # ifconfig/route/netstat/arp
-yum install iproute2    # ip addr/ip route/ss/ip neighbor
+yum install net-tools           # ifconfig/route/netstat/arp
+yum install iproute2            # ip addr/ip route/ss/ip neighbor
+yum install bind-utils          # nslookup
+repoquery --tree-requires lshw  # Package relationship tree view
 ```
 
 応用   
