@@ -15,7 +15,8 @@ ip route                                            # ルーティングテー�
 more /etc/hostname                                  # ホスト名
 more /etc/sysconfig/network-scripts/ifcfg-eth0      # eth0の設定ファイル
 
-more /etc/resolv.conf                               # DNS設定, systemctl restart network
+vi /etc/resolv.conf                                 # DNS設定, systemctl restart network
+vi /etc/nsswitch.conf                               # ネットワークデータベースの検索順位定義
 nslookup
 
 systemctl status network
@@ -147,3 +148,15 @@ grub2-mkconfig -o /boot/grub2/grub.cfg              #
 [【 grub2-set-default／grub-set-default 】コマンド――GRUB 2のデフォルト起動メニューを設定する](https://www.atmarkit.co.jp/ait/articles/1901/31/news048.html)
 
 
+### ベンチマーク
+bashで100万回ループ
+```sh
+cat /etc/centos-release
+dmidecode -s processor-version
+time for ((i=0;++i<1000000;))
+>do
+>:
+>done
+```
+
+[お手軽なベンチマークあれこれ](https://luna2-linux.blogspot.com/2015/05/blog-post.html?m=0)
