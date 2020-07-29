@@ -1,12 +1,12 @@
 ### コマンド
-```bash
+```sh
 hostnamectl     # カーネルやOS情報
 uname -r        # カーネルバージョン表示
 depmod          # カーネルモジュールの依存関係リストを更新
 ```
 
 ### ネットワーク環境の確認
-```bash
+```sh
 ifconfig
 ip a
 
@@ -27,7 +27,7 @@ nmcli device                                        # デバイス確認
 ```
 
 ```ifcfg-eth0```の例, DHCPの場合
-```bash
+```sh
 TYPE=Ethernet
 BOOTPROTO=dhcp              # DCHPか固定IPか, dhcp/none
 DEFROUTE=yes
@@ -46,7 +46,7 @@ NM_CONTROLLED=NO            # NetworkManagerを使用しない
 ```
 
 固定IPの場合
-```bash
+```sh
 BOOTPROTO=none
 IPADDR="172.16.0.10"
 GATEWAY="172.16.0.1"        # デフォルトゲートウエイ設定
@@ -54,8 +54,6 @@ DEFROUTE=yes                # デフォルトゲートウエイ設定
 DNS1="172.16.0.1"           # DNSサーバ
 ```
 
-
-リンク   
 [@IT/ ネットワーク環境の確認](https://www.atmarkit.co.jp/ait/articles/0109/29/news004.html)
 
 [ifconfigの出力結果に書いてあること](https://qiita.com/pe-ta/items/aff8db72530c6baa11b2)
@@ -64,7 +62,7 @@ DNS1="172.16.0.1"           # DNSサーバ
 
 ### ハードウエハ情報の確認
 基本   
-```bash
+```sh
 lshw                # /proc, /dev/, /sys の情報を参照
 lshw -short         # 短縮表示
 lshw -c cpu,memory
@@ -92,7 +90,7 @@ repoquery --tree-requires lshw  # Package relationship tree view
 ```
 
 応用   
-```bash
+```sh
 lspci | grep 'Ethernet\|Network'    # どこのNICを使っているか
 lshw -c network                     # どこのNICを使っているか
 
@@ -108,7 +106,7 @@ udevadm info -a --path=/sys/class/net/eth0
 ```
 
 応用その２、ドライバの入れ替え
-```bash
+```sh
 lsmod | grep hoge
 ifconfig eth<n> down
 modprobe -r hoge
@@ -117,7 +115,6 @@ modprobe new_hoge
 modinfo new_hoge
 ```
 
-リンク   
 [【 lshw 】コマンド――ハードウェアの情報を表示する](https://www.atmarkit.co.jp/ait/articles/1904/11/news023.html)
 
 [【 lspci 】コマンド――PCIデバイスの情報を表示する](https://www.atmarkit.co.jp/ait/articles/1901/18/news046.html)
@@ -135,14 +132,13 @@ modinfo new_hoge
 [Marvell Driver Downloads](https://driverdownloads.aquantia.com/)
 
 ### 起動/Boot
-```bash
+```sh
 /etc/default/grub   # 基本設定ファイル
 
 cp /boot/grub2/grub.cfg /boot/grub2/grub.cfg.org    # backup
 grub2-mkconfig -o /boot/grub2/grub.cfg              # 
 ```
 
-リンク   
 [CentOS7 ブートローダ周り](https://qiita.com/moukuto/items/c78f29f9bd1221baffca)
 
 [【 grub2-set-default／grub-set-default 】コマンド――GRUB 2のデフォルト起動メニューを設定する](https://www.atmarkit.co.jp/ait/articles/1901/31/news048.html)
