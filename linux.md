@@ -144,6 +144,12 @@ grub2-mkconfig -o /boot/grub2/grub.cfg              #
 [【 grub2-set-default／grub-set-default 】コマンド――GRUB 2のデフォルト起動メニューを設定する](https://www.atmarkit.co.jp/ait/articles/1901/31/news048.html)
 
 
+### コンソールの解像度変更
+
+[CentOS 7インストール後の設定](https://www.storange.jp/2017/03/centos-7.html)
+
+[コンソールを高解像度で表示する](http://linux.kororo.jp/cont/tips/console_vga.php)
+
 ### ベンチマーク
 bashで100万回ループ
 ```sh
