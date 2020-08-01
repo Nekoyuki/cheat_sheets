@@ -29,6 +29,8 @@
 
 [Java コード入門](https://java-code.jp/)
 
+[ITSakura](https://itsakura.com/java)
+
 ### Eclipse
 
 [リポジトリの作成からコミットまで](https://itsakura.com/eclipse-git-repository)
