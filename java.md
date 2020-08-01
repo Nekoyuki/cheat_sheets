@@ -23,8 +23,14 @@
 
 ```reflection```... リフレクション, [link](https://www.sejuku.net/blog/33252)
 
-```Outline view```...Ctrl + O, [link](https://so-zou.jp/software/tech/tool/ide/eclipse/view/general/outline/)
+```this()```... コンストラクタ中でのthis()の使い方, [link](https://qiita.com/hrs_myk/items/2091626b625360cc8fd1)
 
 [とほほ](http://www.tohoho-web.com/java/index.htm)
 
 [Java コード入門](https://java-code.jp/)
+
+### Eclipse
+
+[リポジトリの作成からコミットまで](https://itsakura.com/eclipse-git-repository)
+
+```Outline view```...Ctrl + O, [link](https://so-zou.jp/software/tech/tool/ide/eclipse/view/general/outline/)
