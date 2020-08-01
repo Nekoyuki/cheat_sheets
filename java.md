@@ -36,3 +36,7 @@
 [リポジトリの作成からコミットまで](https://itsakura.com/eclipse-git-repository)
 
 ```Outline view```...Ctrl + O, [link](https://so-zou.jp/software/tech/tool/ide/eclipse/view/general/outline/)
+
+```CTRL + T```... スーパータイプ階層を開く
+
+```CTRL + ALT + H```... 呼び出し階層を開く[link](https://qiita.com/nikuyoshi/items/221ba004da6c5daacb88)
