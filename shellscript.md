@@ -87,6 +87,13 @@ echo ${#array[@]}              # 要素数
 array=(hage "${array[@]}")     # 先頭に要素追加
 array+=( hage )                # 末尾に要素追加
 
+# 配列作成
+array =(
+    hage
+    hige
+    hoge
+)
+
 # 配列参照
 for i in ${array[@]}
 do
@@ -111,6 +118,7 @@ EOF
 ### suffixを削る
 ```bash
 BASENAME=`basename ${0%.*}`
+BASENAME=`basename $0|sed 's/\.[^\.]*$//'`
 ```
 
 ### Date
