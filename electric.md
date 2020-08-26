@@ -20,3 +20,9 @@ Physics Videos by Eugene Khutoryansky
 
 [AC電圧から DC電圧への整流器](https://www.youtube.com/watch?v=J8A6QUxfk8c)
 
+パソコンなんでも屋さん
+
+[コンデンサ、トランジスタの仕組みを実践で学ぼう](https://www.youtube.com/watch?v=d8_25ngQf_w)
+
+[コンデンサとトランジスタを使ってLEDを点滅させてみよう　~弛張発振回路~](https://www.youtube.com/watch?v=aHdKebi-ebI&t=1094s)
+
