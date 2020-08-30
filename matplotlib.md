@@ -48,6 +48,15 @@ plt.text(2.0, -0.4, 'hage', fontsize=15)    # テキスト
 
 [tick_params](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html)
 
+```python
+ax.set_title('hage')
+ax.set_xlable('hage')
+ax.set_xlim(0,1)
+ax.tick_params(labelrotation=45)
+ax.get_figure().savefig('hage')
+
+```
+
 ### 画像の保存
 
 ```python

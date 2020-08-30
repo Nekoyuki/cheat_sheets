@@ -141,10 +141,19 @@ if文で```False```と判定されるもの
 bool(False), None, 0, 0.0, '', [], {}
 ```
 
-### Tips
-反転
+### 反転
 ```python
 In [12]: 'hagehagehage'[::-1]
 Out[12]: 'egahegahegah'
+```
+
+### argv + basename + mkdir
+```python
+import sys
+import os
+if __name__ == '__main__'
+    args = sys.argv
+    basename = os.path.spltext(args[1])[0]
+    os.mkdir(basename)
 ```
 
