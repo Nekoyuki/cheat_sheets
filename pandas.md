@@ -268,6 +268,38 @@ In [34]: for r, d in df.iterrows():
 df.groupby('pin').mean()
 ```
 
+特定の値を個数をカウントする
+```python
+In [9]: df = sns.load_dataset('iris')
+
+In [10]: df.groupby('species').apply(lambda x: x == 0.2)
+Out[10]: 
+     sepal_length  sepal_width  petal_length  petal_width  species
+0           False        False         False         True    False
+1           False        False         False         True    False
+2           False        False         False         True    False
+3           False        False         False         True    False
+4           False        False         False         True    False
+..            ...          ...           ...          ...      ...
+145         False        False         False        False    False
+146         False        False         False        False    False
+147         False        False         False        False    False
+148         False        False         False        False    False
+149         False        False         False        False    False
+
+[150 rows x 5 columns]
+
+In [11]: df.groupby('species').apply(lambda x: x == 0.2).sum()
+Out[11]: 
+sepal_length     0
+sepal_width      0
+petal_length     0
+petal_width     29
+species          0
+dtype: int64
+```
+
+
 ### シリーズを合体して１つにする ```melt```
 ```python
 In [35]: df.melt()
