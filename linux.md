@@ -162,3 +162,11 @@ time for ((i=0;++i<1000000;))
 ```
 
 [お手軽なベンチマークあれこれ](https://luna2-linux.blogspot.com/2015/05/blog-post.html?m=0)
+
+### デスクトップ環境
+```sh
+yum groups install "GNOME Desktop" -y
+```
+
+[CentOS7にGNOMEをインストールしてデスクトップ環境を使えるようにする](https://ips.nekotype.com/5100/)
+
