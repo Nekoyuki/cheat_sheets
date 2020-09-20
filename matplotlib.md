@@ -44,6 +44,7 @@ plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')     
 plt.yticks([0, 0.5, 1.0])           # Yグリッド
 plt.tight_layout()                  # うまいこと出力図の範囲を綺麗に収める
 plt.text(2.0, -0.4, 'hage', fontsize=15)    # テキスト
+plt.close(fig)                      # Figureを閉じる... これやらないと、メモリオーバフローになることあるっす。
 ```
 
 [tick_params](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.tick_params.html)
