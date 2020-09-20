@@ -10,6 +10,8 @@
 
 [オシロスコープの使い方](https://misoji-engineer.com/archives/oscilloscop-how-to.html)
 
+[オシロスコープの使い方【RIGOL DS1202Z-E】](https://www.youtube.com/watch?v=ny-YVPanOPM&ab_channel=%E3%81%AA%E3%81%8B%E3%81%97%E3%83%BC%E3%81%AE%E9%9B%BB%E5%AD%90%E5%B7%A5%E4%BD%9C%E9%83%A8)
+
 ### コンデンサ
 
 [コンデンサーの特徴と回路をわかりやすく解説](https://www.youtube.com/watch?v=SKpBm7txGTE)
