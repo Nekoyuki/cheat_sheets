@@ -64,6 +64,10 @@ ax.get_figure().savefig('hage')
 tips.groupby('day').mean()['total_bill'].plot(kind='bar').get_figure().savefig('hage.png')
 ```
 
+### Color example
+
+[Color example](https://matplotlib.org/examples/color/colormaps_reference.html)
+
 ### violinplot
 x/y/data、をきちんと指定する必要あり。meltで一次元のシリーズに変換要。
 

@@ -146,6 +146,16 @@ Out[170]:
 3  a  l  m  n  e
 ```
 
+In [171]: df.where(df == 'a', np.nan)    # whereを使った例, 対象となった以外はnp.nan
+Out[171]:
+     1    2    3    4    5
+-
+1    a  NaN  NaN  NaN  NaN
+2    a  NaN  NaN  NaN  NaN
+3    a  NaN  NaN  NaN  NaN
+4  NaN  NaN  NaN  NaN  NaN
+
+
 ### ドロップ
 ```python
 In [129]: df.drop([1])  # 行のドロップ
@@ -273,7 +283,7 @@ df.groupby('pin').mean()
 In [9]: df = sns.load_dataset('iris')
 
 In [10]: df.groupby('species').apply(lambda x: x == 0.2)
-Out[10]: 
+Out[10]:
      sepal_length  sepal_width  petal_length  petal_width  species
 0           False        False         False         True    False
 1           False        False         False         True    False
@@ -290,7 +300,7 @@ Out[10]:
 [150 rows x 5 columns]
 
 In [11]: df.groupby('species').apply(lambda x: x == 0.2).sum()
-Out[11]: 
+Out[11]:
 sepal_length     0
 sepal_width      0
 petal_length     0
