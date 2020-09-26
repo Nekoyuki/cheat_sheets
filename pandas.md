@@ -391,6 +391,12 @@ In [98]: print(df.to_csv())
 0,Hage,Hige
 ```
 
+### to_string
+```python
+pd.options.display.max_colwidth = 500   # これを唱えないと行末が...になっちゃう
+df.to_string('hage.csv', index=False)
+```
+
 ### データフレーム中で最小値を探す
 ```python
 In [135]: i = [0, 0, 99999]
@@ -399,6 +405,25 @@ In [135]: i = [0, 0, 99999]
      ...:         i = [r, c, s] if i[2] > s else i
      ...: print(i)
 [9, 'petal_width', 0.1]
+```
+
+### データフレームのリスト例
+```python
+def aaa(i):
+    df = pd.DataFrame)
+    df.read_csv(i)
+    return df
+
+df_lst = []
+for i in args:
+    df = aaa(i)
+    df_lst.append(df)
+
+se_acc = pd.Series()
+for j in df_lst:
+    for k j.index.to_list():
+        se = j.loc[k, :]
+        se_acc = pd.concat([se_acc, se])
 ```
 
 ### Links

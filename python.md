@@ -57,10 +57,17 @@ for i in range(1,10,2):
 ```
 
 ### 16進数
+16進数 -> 10進数
 ```python
 In [5]: int('a', 16)
 Out[5]: 10
 ```
+10進数 -> 16進数
+```python
+In [12]: hex(10)
+Out[12]: '0xa'
+```
+
 16進数 -> 2進数
 ```python
 n [1]: a = '007f'
@@ -119,7 +126,7 @@ In [112]: re.sub('<a.*?>|</a>', '', '<a href="hige">hage hage 12345<a/>')
 Out[112]: 'hage hage 12345'
 ```
 
-### 内包表記 
+### 内包表記
 ```python
 In [3]: [i for i in range(0,5,1) if i % 2 == 0]
 Out[3]: [0, 2, 4]
@@ -161,13 +168,27 @@ In [12]: 'hagehagehage'[::-1]
 Out[12]: 'egahegahegah'
 ```
 
-### argv + basename + mkdir
+### ディクショナリ
+```python
+In [13]: dict = {
+    ...: '0':'hage',
+    ...: '1':'hige',
+    ...: }
+
+In [14]: dict['0']
+Out[14]: 'hage'
+
+```
+
+### argv + basename + mkdir + loop
 ```python
 import sys
 import os
 if __name__ == '__main__'
-    args = sys.argv
-    basename = os.path.spltext(args[1])[0]
+    args = sys.argv[1:]     # プログラム名以外をゲット
+    basename = os.path.spltext(sys.argv[0])[0]
     os.mkdir(basename)
+    for i in args:
+        print(i)
 ```
 
