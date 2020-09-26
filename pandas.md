@@ -146,6 +146,7 @@ Out[170]:
 3  a  l  m  n  e
 ```
 
+```python
 In [171]: df.where(df == 'a', np.nan)    # whereを使った例, 対象となった以外はnp.nan
 Out[171]:
      1    2    3    4    5
@@ -154,7 +155,7 @@ Out[171]:
 2    a  NaN  NaN  NaN  NaN
 3    a  NaN  NaN  NaN  NaN
 4  NaN  NaN  NaN  NaN  NaN
-
+```
 
 ### ドロップ
 ```python
