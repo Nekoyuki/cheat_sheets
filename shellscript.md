@@ -86,6 +86,7 @@ array=()                       # 生成
 echo ${#array[@]}              # 要素数
 array=(hage "${array[@]}")     # 先頭に要素追加
 array+=( hage )                # 末尾に要素追加
+unset array[1]              　 # 削除
 
 # 配列作成
 array =(
