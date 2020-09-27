@@ -39,7 +39,7 @@ In [49]: fig, ax = plt.subplots(); df.plot(ax=ax); lgd = ax.legend(bbox_to_ancho
 plt.figure(figsize=[5,5])           # キャンバスサイズ
 plt.title('hageX', fontsize=30)     # タイトル
 plt.ylim([0,3])                     # Yの値の最小、最大値
-plt.xlable('hage', fontsize=30)     # Xラベル
+plt.xlabel('hage', fontsize=30)     # Xラベル
 plt.tick_params(axis='x', labelsize = 10, labelrotation=90, colors='white')     # 軸ラベルの調整
 plt.yticks([0, 0.5, 1.0])           # Yグリッド
 plt.tight_layout()                  # うまいこと出力図の範囲を綺麗に収める
@@ -51,7 +51,7 @@ plt.close(fig)                      # Figureを閉じる... これやらない�
 
 ```python
 ax.set_title('hage')
-ax.set_xlable('hage')
+ax.set_xlabel('hage')
 ax.set_xlim(0,1)
 ax.tick_params(labelrotation=45)
 ax.get_figure().savefig('hage')
