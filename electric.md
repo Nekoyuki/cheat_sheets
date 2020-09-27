@@ -29,3 +29,5 @@ Physics Videos by Eugene Khutoryansky
 [コンデンサとトランジスタを使ってLEDを点滅させてみよう　~弛張発振回路~](https://www.youtube.com/watch?v=aHdKebi-ebI&t=1094s)
 
 [ブレッドボードを用いた実験](http://www.felix.or.jp/Fundamentals/Exp/BB/index.html)
+
+[温度センサ MCP9808](https://www.denshi.club/pc/raspi/5raspberry-pi-zeroiot183-mcp9808.html)
