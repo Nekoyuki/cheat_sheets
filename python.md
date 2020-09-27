@@ -192,3 +192,5 @@ if __name__ == '__main__'
         print(i)
 ```
 
+### Links
+[note.nkmk.me](https://note.nkmk.me/)
