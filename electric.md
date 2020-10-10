@@ -31,3 +31,13 @@ Physics Videos by Eugene Khutoryansky
 [ブレッドボードを用いた実験](http://www.felix.or.jp/Fundamentals/Exp/BB/index.html)
 
 [温度センサ MCP9808](https://www.denshi.club/pc/raspi/5raspberry-pi-zeroiot183-mcp9808.html)
+
+### リンク
+
+[なかしーの電子工作部](https://www.youtube.com/channel/UCBfVxqnPKKJO4l5E1iH3UQg/videos)
+
+[tottaro](https://www.youtube.com/c/tottaro/videos)
+
+[non-pro-rework](https://www.youtube.com/channel/UCyr3yAa1igIrk6lYEUgFk2g/videos)
+
+[DroneBot Workshop](https://www.youtube.com/c/Dronebotworkshop1/videos)
