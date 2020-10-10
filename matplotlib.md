@@ -131,6 +131,13 @@ Out[23]: <matplotlib.axes._subplots.AxesSubplot at 0x1989268ce88>
 ```
 ![](image/2020_06_20_violinplot.png)
 
+### 2軸グラフ
+
+```python
+df = pd.DataFrame()
+df.plot(secondary_y=['ltp'])
+```
+
 ### リンク
 
 https://matplotlib.org/3.1.0/index.html
