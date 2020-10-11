@@ -25,7 +25,7 @@ In [47]: fig = plt.figure(); ax = fig.add_subplot(111); ax.tick_params(colors='w
 ```lenged``` を外に出す
 
 ```python
-In [48]: fig, ax = plt.subplots(); df.plot(ax=ax); ax.legend(bbox_to_anchor=(1.4,1), loc='upper right')
+In [48]: fig, ax = plt.subplots(); df.plot(ax=ax); ax.legend(bbox_to_anchor=(1.4,1), loc='upper right', borderaxespad=0.1)
 ```
 
 ```savefig()```する時に、```legend```がはみ出ないようにするおまじない
@@ -141,3 +141,13 @@ df.plot(secondary_y=['ltp'])
 ### リンク
 
 https://matplotlib.org/3.1.0/index.html
+
+[早く知っておきたかったmatplotlibの基礎知識、あるいは見た目の調整が捗るArtistの話](https://qiita.com/skotaro/items/08dc0b8c5704c94eafb9)
+
+[matplotlib基礎 | figureやaxesでのグラフのレイアウト](https://qiita.com/szkr8/items/90167693f142ebb55a7d)
+
+[matplotlib の legend(凡例) の 位置を調整する](https://qiita.com/matsui-k20xx/items/291400ed56a39ed63462)
+
+[たこ焼き食べた.net](https://y-n-c.hatenadiary.org/entry/20091122/1258842406)
+
+
