@@ -42,3 +42,7 @@
 [リポジトリの作成からコミットまで](https://itsakura.com/eclipse-git-repository)
 
 [Git リポジトリからのインポート](http://mixi-inc.github.io/AndroidTraining/appendix/A.01.import-from-git-for-eclipse.html)
+
+[RemoteのgitリポジトリからEclipseプロジェクトを作成する](https://git-manual.net/make-eclipse-project-remote-git/)
+
+[リモートの初期リポジトリーにEclipseプロジェクトをプッシュする](https://git-manual.net/push-to-remote-eclipse-project/)
