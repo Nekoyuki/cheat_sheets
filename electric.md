@@ -34,6 +34,8 @@ Physics Videos by Eugene Khutoryansky
 
 [ラズベリーパイのGPIOの使い方！5V/12Vを制御してみた](https://misoji-engineer.com/archives/raspberrypi-gpio.html)
 
+[Raspberry PiでMAX31855を使って熱電対でデータ取得](https://qiita.com/tm_nagoya/items/501b558dab5f427e1d98)
+
 ### リンク
 
 [なかしーの電子工作部](https://www.youtube.com/channel/UCBfVxqnPKKJO4l5E1iH3UQg/videos)
