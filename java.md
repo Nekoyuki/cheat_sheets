@@ -1,7 +1,7 @@
 ### 覚書
 ```...```... 可変長引数, [link](https://qiita.com/ponsuke0531/items/f0fc923cdbf2ed987013)
 
-```<>```... ジェネリックス, [link](https://java-code.jp/156)
+```<>```... ジェネリックス, [ITSakura/Java ジェネリクスのサンプル](https://itsakura.com/java_generics)
 
 ```<T>```... 仮型パラメータ, [link](https://qiita.com/rodentia6/items/b36d134fa24867ba4d63)
 
