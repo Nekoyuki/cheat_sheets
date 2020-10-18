@@ -32,6 +32,8 @@ Physics Videos by Eugene Khutoryansky
 
 [温度センサ MCP9808](https://www.denshi.club/pc/raspi/5raspberry-pi-zeroiot183-mcp9808.html)
 
+[ラズベリーパイのGPIOの使い方！5V/12Vを制御してみた](https://misoji-engineer.com/archives/raspberrypi-gpio.html)
+
 ### リンク
 
 [なかしーの電子工作部](https://www.youtube.com/channel/UCBfVxqnPKKJO4l5E1iH3UQg/videos)
