@@ -25,6 +25,10 @@
 
 ```this()```... コンストラクタ中でのthis()の使い方, [link](https://qiita.com/hrs_myk/items/2091626b625360cc8fd1)
 
+```constractor```... [クラスの継承とコンストラクタ](https://qiita.com/katolisa/items/438a8d720ea5a60b55c4)
+
+```Bitset```...[BitSetを使ってみる](http://mocomei.hatenablog.com/entry/2013/04/26/202516)
+
 [とほほ](http://www.tohoho-web.com/java/index.htm)
 
 [Java コード入門](https://java-code.jp/)
