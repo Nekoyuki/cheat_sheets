@@ -1,4 +1,14 @@
-###
+### 
+
+Python3にする
+```bash
+cd /usr/bin
+sudo unlink python
+sudo ln -s python3 python
+```
+
+
+### リンク
 
 [Raspberry Pi/はじめにやること](https://www.angelcurio.com/raspberrypi/?Raspberry%20Pi/%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB%E3%82%84%E3%82%8B%E3%81%93%E3%81%A8)
 
