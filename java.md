@@ -29,6 +29,8 @@
 
 ```Bitset```...[BitSetを使ってみる](http://mocomei.hatenablog.com/entry/2013/04/26/202516)
 
+```(type)var```...キャスト[link](https://java-code.jp/66)
+
 [とほほ](http://www.tohoho-web.com/java/index.htm)
 
 [Java コード入門](https://java-code.jp/)
