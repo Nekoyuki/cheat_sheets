@@ -6,7 +6,12 @@ cd /usr/bin
 sudo unlink python
 sudo ln -s python3 python
 ```
-
+zshにする
+```bash
+sudo vim /etc/pam.d chsh
+# auth required pam_shells.so # comment out
+chsh -s /usr/bin/zsh
+```
 
 ### リンク
 
