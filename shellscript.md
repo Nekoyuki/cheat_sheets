@@ -128,8 +128,19 @@ EOF
 
 ### suffixを削る
 ```bash
-BASENAME=`basename ${0%.*}`
-BASENAME=`basename $0|sed 's/\.[^\.]*$//'`
+${変数#パターン}   # 先頭から最短一致した部分を取り除く
+${変数##パターン}  # 先頭から最長一致した部分を取り除く
+${変数%パターン}   # 末尾から最短一致した部分を取り除く
+${変数%%パターン}  # 末尾から最長一致した部分を取り除く
+```
+
+```bash
+FILENAME=${0##*/}                           # ファイル名取り出し（拡張子あり）
+BASENAME=`basename ${0%.*}`                 # ファイル名取り出し（拡張子なし）
+BASENAME=`basename $0|sed 's/\.[^\.]*$//'`  # ファイル名取り出し（拡張子なし）
+EXT=${0##*.}                                # 拡張子
+DIR=${0%/*}                                 # ディレクトリ
+DIR=`dirname $0`                            # ディレクトリ
 ```
 
 ### Date
@@ -140,7 +151,7 @@ date "+%Y_%m_%d_%H_%M"
 ### 計算 ```(( ))```で囲む
 ```bash
 $((++i))    # インクリメント
-printf '%x\n' $(((0x7802ef & 0xfffff0) | 0x3))  # 16進でマスク+アンドして、16進(0x)で出力
+print 'x\n' $(((0x7802ef & 0xfffff0) | 0x3))  # 16進でマスク+アンドして、16進(0x)で出力
 printf "%x" $((0x${hoge} + 0x80))               # 16進で計算して、16進で出力
 printf "%02d\n" 6                               # 先頭0埋め、結果は、06
 A="hagehage3"; printf '0x%02x\n' $((${A:${#A}-1:1}<<4))  # 最後の数字を取り、ビットシフト
@@ -161,4 +172,4 @@ https://shellscript.sunone.me/
 
 [Bash $((算術式)) のすべて - A 基本編](https://qiita.com/akinomyoga/items/9761031c551d43307374)
 
-[bash 配列まとめ](https://qiita.com/b4b4r07/items/e56a8e3471fb45df2f59)
+bash 配列まとめ](https://qiita.com/b4b4r07/items/e56a8e3471fb45df2f59)
