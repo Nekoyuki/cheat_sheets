@@ -170,3 +170,13 @@ yum groups install "GNOME Desktop" -y
 
 [CentOS7にGNOMEをインストールしてデスクトップ環境を使えるようにする](https://ips.nekotype.com/5100/)
 
+### 時刻合わせ
+```sh
+date --set @"$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)"
+date -s "$(curl -s --head http://www.google.co.jp | grep ^Date | cut -b 7-)"
+date -s "$(CURL -L "http://www.google.com/" 2>&1 | grep ^Date | cut -d' ' -f2-)"
+```
+
+[ntpを使わずに時刻を合わせるワンライナー](https://qiita.com/pankona/items/258fed78c168918a8ad2)
+[[CentOS]Webプロキシ配下からサーバー時刻を同期する方法~NTPコマンドを使わない方法~](https://blog.trippyboy.com/2014/centos/centosweb%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E9%85%8D%E4%B8%8B%E3%81%8B%E3%82%89%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%99%82%E5%88%BB%E3%82%92%E5%90%8C%E6%9C%9F%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)
+
