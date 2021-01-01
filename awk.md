@@ -9,4 +9,5 @@ awk '$0 ~/hage/{ print $5 }' hages.txt   # 行全体で正規表現マッチ
 awk '$1 ~/^d/ && $9 ~/^\.d/'{ print $5 }' hages.txt   # 第１フィールドと第９フィールドで正規表現マッチ
 awk 'NR==2 {print $3}'  # 2行目の3番目のやつを出力
 echo "aaa139"|awk '{printf "%1d.%2d\n", substr($1,4,1), substr($1,5,2)}'  # 139を抜き取り1.39と表示
+echo "a_b_c" |awk -F'_' '{print $2}'  # フィールドセパレータ
 ```
