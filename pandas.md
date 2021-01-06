@@ -165,6 +165,14 @@ Out[129]:
 0  a  b  c  d  e
 2  k  l  m  n  o
 
+In [12]: df[1:] # 行のドロップ
+Out[12]:
+   1  2  3  4  5
+-
+2  f  g  h  i  j
+3  k  l  m  n  o
+
+
 In [130]: df.drop(['1'], axis=1)    # 列のドロップ
 Out[130]:
    2  3  4  5
