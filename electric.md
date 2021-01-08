@@ -36,6 +36,10 @@ Physics Videos by Eugene Khutoryansky
 
 [Raspberry PiでMAX31855を使って熱電対でデータ取得](https://qiita.com/tm_nagoya/items/501b558dab5f427e1d98)
 
+### 工作
+
+[XHコネクタ 取り付け方・外し方](https://www.youtube.com/watch?v=-CE_2HUecYM&ab_channel=%E3%82%A4%E3%83%BC%E3%83%95%E3%82%A7%E3%83%AD%E3%83%BC%E3%82%BA)
+
 ### リンク
 
 [なかしーの電子工作部](https://www.youtube.com/channel/UCBfVxqnPKKJO4l5E1iH3UQg/videos)
