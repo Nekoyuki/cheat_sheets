@@ -150,6 +150,15 @@ grub2-mkconfig -o /boot/grub2/grub.cfg              #
 
 [コンソールを高解像度で表示する](http://linux.kororo.jp/cont/tips/console_vga.php)
 
+### カーネル
+```sh
+zcat initramfs-xxx.img | cpio -idv  # initrdの中身をみる。圧縮の解凍になるので注意！
+find . | cpio --quiet -H newc -o | gzip -9 -n > /boot/imagefile.img # cpioイメージの圧縮
+```
+[初期 RAM ディスク (initrd) を使用する](https://doc.kusakata.com/admin-guide/initrd.html)
+
+[Linuxがブートするまで](https://keichi.dev/post/linux-boot/)
+
 ### ベンチマーク
 bashで100万回ループ
 ```sh
