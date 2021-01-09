@@ -157,6 +157,10 @@ Out[171]:
 4  NaN  NaN  NaN  NaN  NaN
 ```
 
+### 重複要素を除く
+
+[PandasのDataFrameやSeriesで重複要素を取り除く方法](https://qiita.com/kira4845/items/6798e54eb76b15329e3c)
+
 ### ドロップ
 ```python
 In [129]: df.drop([1])  # 行のドロップ
