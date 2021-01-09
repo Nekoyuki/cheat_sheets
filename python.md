@@ -162,6 +162,13 @@ if文で```False```と判定されるもの
 bool(False), None, 0, 0.0, '', [], {}
 ```
 
+ファイルの存在確認
+```python
+os.path.exists('hoge.txt')  # ファイル/ディレクトリがあるか？
+os.path.isfile('file')      # ファイルがあるか？
+os.path.isdir('dir')        # ディレクトリがあるか？
+```
+
 ### 反転
 ```python
 In [12]: 'hagehagehage'[::-1]
@@ -178,6 +185,11 @@ In [13]: dict = {
 In [14]: dict['0']
 Out[14]: 'hage'
 
+```
+
+### 終了
+```python
+sys.exit()
 ```
 
 ### argv + basename + mkdir + loop
