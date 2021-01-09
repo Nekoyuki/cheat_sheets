@@ -269,8 +269,8 @@ Out[32]:
 2  5  6
 
 # ベース
-In [17]: for r, d in df.iterrows():
-    ...:     print(r,d)
+In [17]: for r, se in df.iterrows():
+    ...:     print(r,se)
     ...:
 0 a    1
 b    2
@@ -283,21 +283,21 @@ b    6
 Name: 2, dtype: int64
 
 # 応用
-In [18]: for r, d in df.iterrows():
-    ...:     print(r,d[0])
+In [18]: for r, se in df.iterrows():
+    ...:     print(r,se[0])
     ...:
 0 1
 1 3
 2 5
 
-In [33]: for c, d in df.iteritems():
-    ...:     print(c, d.max())
+In [33]: for c, se in df.iteritems():
+    ...:     print(c, se.max())
     ...:
 a 5
 b 6
 
-In [34]: for r, d in df.iterrows():
-    ...:     print(r, d.max())
+In [34]: for r, se in df.iterrows():
+    ...:     print(r, se.max())
     ...:
 0 2
 1 4
