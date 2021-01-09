@@ -268,6 +268,28 @@ Out[32]:
 1  3  4
 2  5  6
 
+# ベース
+In [17]: for r, d in df.iterrows():
+    ...:     print(r,d)
+    ...:
+0 a    1
+b    2
+Name: 0, dtype: int64
+1 a    3
+b    4
+Name: 1, dtype: int64
+2 a    5
+b    6
+Name: 2, dtype: int64
+
+# 応用
+In [18]: for r, d in df.iterrows():
+    ...:     print(r,d[0])
+    ...:
+0 1
+1 3
+2 5
+
 In [33]: for c, d in df.iteritems():
     ...:     print(c, d.max())
     ...:
