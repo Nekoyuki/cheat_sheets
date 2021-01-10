@@ -1,5 +1,5 @@
 ### おためしデータフレーム作成
-
+その１
 ```python
 In [273]: data='''
      ...: - 1 2 3 4 5
@@ -25,7 +25,18 @@ In [277]: df.columns
 Out[277]: Index(['1', '2', '3', '4', '5'], dtype='object')
 ```
 
-[seaborn-data](https://github.com/mwaskom/seaborn-data) のデータを使う場合
+その２
+```python
+In [19]: df = pd.DataFrame(index=[2,3], columns=[4,5], data=[['a','b'],['c','d']])
+
+In [20]: df
+Out[20]:
+   4  5
+2  a  b
+3  c  d
+```
+
+その３ [seaborn-data](https://github.com/mwaskom/seaborn-data) のデータを使う場合
 
 ```python
 In [35]: import seaborn as sns
