@@ -152,8 +152,12 @@ grub2-mkconfig -o /boot/grub2/grub.cfg              #
 
 ### カーネル
 ```sh
-zcat initramfs-xxx.img | cpio -idv  # initrdの中身をみる。圧縮の解凍になるので注意！
+lsinitrd hoge.img # imgの中身をみる
+
+zcat initramfs-xxx.img | cpio -idv  # initrdの中身をみる。解凍！
 find . | cpio --quiet -H newc -o | gzip -9 -n > /boot/imagefile.img # cpioイメージの圧縮
+zcat initrd.img | cpio -i ic # 解凍!
+find . | cpio --quiet -c -o |gzip -c > initrd.img # cpioイメージの圧縮, こっちがよーけ使う
 ```
 [初期 RAM ディスク (initrd) を使用する](https://doc.kusakata.com/admin-guide/initrd.html)
 
