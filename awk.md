@@ -1,7 +1,7 @@
 ### 基本
 awk 'パターン {アクション}' ファイル名
 
-```sh
+```awk
 ls -l | awk '$5 >= 1000000 { print }'   # ファイルサイズが約1MB以上の行を出力する
 
 awk '$3 == "hage" { print $5 }' hages.txt   #
@@ -13,7 +13,7 @@ echo "a_b_c" |awk -F'_' '{print $2}'  # フィールドセパレータ
 ```
 
 ### ループ
-```sh
+```awk
 awk '\
 NR==1{ cnt=split($0, array, ","); } \                               # splitで$0を","で分解して、arrayに入れる
 END{ for ( i=1; i<=10; i++){ printf "%-15s %-12s\n", array; } } \   # ループでprintfする
