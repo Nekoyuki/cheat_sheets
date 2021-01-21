@@ -13,7 +13,7 @@
 
 ```overload```... メッソド多重定義, [link](https://qiita.com/Co_Pilot/items/1b1e337a6a8ac4ff79b4)
 
-```enum```... 列挙型, [link](https://java-code.jp/category/enum), [フィールド変数とコンストラクタの定義](https://www.sejuku.net/blog/14779)
+```enum```... 列挙型, [link](https://java-code.jp/category/enum), [列挙型（enum）の基本的な使い方とコード例](https://qiita.com/igm50/items/8c9788d4ba5868642c69)
 
 ```modifier```... 修飾子, [link](http://www.tohoho-web.com/java/modifier.htm)
 
