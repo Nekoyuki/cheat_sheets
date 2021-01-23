@@ -213,5 +213,20 @@ if __name__ == '__main__'
         print(i)
 ```
 
+### docopt
+
+[python_docopt_sample.py](./python_docopt_sample.py)
+
+```python
+In [77]: run python_docopt_sample.py hige
+
+In [78]: args
+Out[78]: 
+{'--help': False,
+ '-a': None,
+ '-b': 'hikari',
+ '<file>': 'hige'}
+```
+
 ### Links
 [note.nkmk.me](https://note.nkmk.me/)
