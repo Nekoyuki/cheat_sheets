@@ -192,13 +192,22 @@ Out[14]: 'hage'
 sys.exit()
 ```
 
+### basename
+```python
+In [40]: os.path.basename(s)
+Out[40]: 'hoge.py'
+
+In [41]: os.path.splitext(s)
+Out[41]: ('/hage/hige/hoge', '.py')
+```
+
 ### argv + basename + mkdir + loop
 ```python
 import sys
 import os
 if __name__ == '__main__'
     args = sys.argv[1:]     # プログラム名以外をゲット
-    basename = os.path.spltext(sys.argv[0])[0]
+    basename = os.path.splitext(sys.argv[0])[0]
     os.mkdir(basename)
     for i in args:
         print(i)
