@@ -221,11 +221,22 @@ if __name__ == '__main__'
 In [77]: run python_docopt_sample.py hige
 
 In [78]: args
-Out[78]: 
+Out[78]:
 {'--help': False,
  '-a': None,
  '-b': 'hikari',
  '<file>': 'hige'}
+```
+
+### シェル動作
+
+```python
+import shutil
+shutil.copy('a', 'b')     # file copy
+shutil.copytree('a, 'b')  # directory copy
+shutil.move('a', 'b')     # move
+os.unlink('a')            # remove
+shutil.rmtree('a')        # remove directory
 ```
 
 ### Links
