@@ -44,6 +44,24 @@ In [35]: import seaborn as sns
 In [36]: sns.load_dataset('iris')
 ```
 
+### DataFrameでロウ、カラムを指定（お勧めしない、loc/ilocを使った方が楽）
+```python
+In [29]: df[1:]     # 行を抽出、スライスのみ！
+Out[29]:
+   1  2  3  4  5
+-
+2  f  g  h  i  j
+3  k  l  m  n  o
+
+In [30]: df[['2','3']]  # 列を抽出、スライスが効かない！
+Out[30]:
+   2  3
+-
+1  b  c
+2  g  h
+3  l  m
+```
+
 ### loc ラベルで指定する。
 空の```df```に値を代入できる。
 
@@ -58,6 +76,25 @@ Out[301]:
 0  h
 ```
 
+スライス
+
+```python
+In [14]: df.loc[:,'2':'5']  # スライス
+Out[14]:
+   2  3  4  5
+-
+1  b  c  d  e
+2  g  h  i  j
+3  l  m  n  o
+In [15]: df.loc[:,'2'::2]  # Step slice、飛び飛びにスライス
+Out[15]:
+   2  4
+-
+1  b  d
+2  g  i
+3  l  n
+```
+
 ### iloc 行番号、列番号で抽出
 ```python
 In [182]: df.iloc[:, [0,1]]
@@ -67,14 +104,8 @@ Out[182]:
 1  f  g
 2  k  l
 
-In [183]: df.iloc[[0,1],:]
-Out[183]:
-   1  2  3  4  5
-0  a  b  c  d  e
-1  f  g  h  i  j
-
-In [184]: df.iloc[1,3]
-Out[184]: 'i'
+In [183]: df.iloc[1,3]
+Out[183]: 'i'
 ```
 
 ### 条件にあった行列
@@ -273,6 +304,25 @@ Out[150]:
 1  def
 ```
 
+### 型変換
+```python
+In [31]: df = pd.DataFrame(['1.5', '2.4'])
+
+In [33]: type(df.iloc[0,0])
+Out[33]: str
+
+In [34]: df.astype(float)   # astypeで変換
+Out[34]:
+     0
+0  1.5
+1  2.4
+
+In [37]: df.apply(lambda x: math.ceil(x), axis=1)   # 端数切り上げする
+Out[37]:
+0    2
+1    3
+dtype: int64
+```
 
 ### カラム、ロウをループする
 ```python
