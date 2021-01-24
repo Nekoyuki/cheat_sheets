@@ -238,6 +238,40 @@ shutil.move('a', 'b')     # move
 os.unlink('a')            # remove
 shutil.rmtree('a')        # remove directory
 ```
+### subprocess
+
+```python
+In [80]: import subprocess
+
+In [81]: from subprocess import PIPE
+
+In [82]: p = subprocess.run("ls *", shell=True, stdout=PIPE, stderr=PIPE)
+
+In [83]: p.stdout
+Out[83]: b'awk.md\neclipse.md\nelectric.md\njava.md\nlinux.md\nmarkdown.md\nmatplotlib.md\npandas.md\npython.md\npython_debugger.md\npython_docopt_sample.py\nraspberry_pi.md\nREADME.md\nregexp.md\nsed.md\nshellscript.md\nvim.md\n\nimage:\n2020_06_20_violinplot.png\n2020_1024a0.PNG\n2020_1024a1.PNG\n2020_1024b0.PNG\n2020_1024d0.PNG\n2020_1024e.PNG\n2020_1024f0.PNG\n2020_1024g.PNG\n'
+
+In [90]: p.stdout.decode('utf-8')
+Out[90]: 'awk.md\neclipse.md\nelectric.md\njava.md\nlinux.md\nmarkdown.md\nmatplotlib.md\npandas.md\npython.md\npython_debugger.md\npython_docopt_sample.py\nraspberry_pi.md\nREADME.md\nregexp.md\nsed.md\nshellscript.md\nvim.md\n\nimage:\n2020_06_20_violinplot.png\n2020_1024a0.PNG\n2020_1024a1.PNG\n2020_1024b0.PNG\n2020_1024d0.PNG\n2020_1024e.PNG\n2020_1024f0.PNG\n2020_1024g.PNG\n'
+
+In [91]: print(p.stdout.decode('utf-8'))
+awk.md
+eclipse.md
+electric.md
+
+In [93]: subprocess.getoutput('ls *')
+Out[93]: 'awk.md\neclipse.md\nelectric.md\njava.md\nlinux.md\nmarkdown.md\nmatplotlib.md\npandas.md\npython.md\npython_debugger.md\npython_docopt_sample.py\nraspberry_pi.md\nREADME.md\nregexp.md\nsed.md\nshellscript.md\nvim.md\n\nimage:\n2020_06_20_violinplot.png\n2020_1024a0.PNG\n2020_1024a1.PNG\n2020_1024b0.PNG\n2020_1024d0.PNG\n2020_1024e.PNG\n2020_1024f0.PNG\n2020_1024g.PNG'
+
+In [94]: subprocess.getoutput('ls *').split()
+Out[94]: 
+['awk.md',
+ 'eclipse.md',
+ 'electric.md' ]
+
+In [99]: subprocess.getoutput('echo "hige"|sed -e "s/i/a/g"')
+Out[99]: '"hage"'
+```
+
+
 
 ### Links
 [note.nkmk.me](https://note.nkmk.me/)
