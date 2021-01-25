@@ -187,6 +187,15 @@ Out[14]: 'hage'
 
 ```
 
+### リスト
+```python
+In [107]: l = ['a', 'b', 'c']
+
+In [108]: l.index('b')
+Out[108]: 1
+```
+[Pythonのリストの要素のインデックス（何番目か）を取得](https://note.nkmk.me/python-list-index/)
+
 ### 終了
 ```python
 sys.exit()
