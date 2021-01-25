@@ -522,6 +522,10 @@ for j in df_lst:
         se_acc = pd.concat([se_acc, se])
 ```
 
+### 列や行を追加
+
+[pandas.DataFrameに列や行を追加（assign, appendなど）](https://note.nkmk.me/python-pandas-assign-append/)
+
 ### Links
 https://pandas.pydata.org/docs/user_guide/index.html
 
