@@ -31,6 +31,8 @@
 
 ```(type)var```...キャスト[link](https://java-code.jp/66)
 
+[Java基本文法](https://qiita.com/MewW6m/items/3d438bbdaa4be021db20)
+
 [とほほ](http://www.tohoho-web.com/java/index.htm)
 
 [Java コード入門](https://java-code.jp/)
