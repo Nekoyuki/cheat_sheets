@@ -25,6 +25,8 @@ chsh -s /usr/bin/zsh
 
 ## GPIO
 
+[DOCUMENTATION>USAGE>GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
+
 ![](image/raspberrypi-gpio-04.png)
 
 [Raspberry PiでPythonのRPi.GPIOを使ってLチカする](https://qiita.com/masato/items/715e28e0c0c945a54297)
