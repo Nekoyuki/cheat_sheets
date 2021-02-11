@@ -2,7 +2,7 @@
 
 ![](image/2020_1026_object.png)
 
-![](image/2020_1026_object_adornments.pn)
+![](image/2020_1026_object_adornments.png)
 
 ### レポジトリ作成とコミット
 
