@@ -1,4 +1,10 @@
-#k## レポジトリ作成とコミット
+### object/objet_adornments
+
+![](image/2020_1026_object.png)
+
+![](image/2020_1026_object_adornments.pn)
+
+### レポジトリ作成とコミット
 
 ```チーム``` > ```プロジェクトの共用```から順に進む。
 
