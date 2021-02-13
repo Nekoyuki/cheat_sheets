@@ -49,3 +49,11 @@ Physics Videos by Eugene Khutoryansky
 [non-pro-rework](https://www.youtube.com/channel/UCyr3yAa1igIrk6lYEUgFk2g/videos)
 
 [DroneBot Workshop](https://www.youtube.com/c/Dronebotworkshop1/videos)
+
+### GPU
+
+[The GPU "Stabbing Guide"](https://www.youtube.com/watch?v=vHGn2pZ0Cv8&ab_channel=ZorasTech)
+
+[A Basic Graphics Card Diagnosis Guide (v2)](https://www.youtube.com/watch?v=erQPrcQnCu0&ab_channel=ZorasTech)
+
+
