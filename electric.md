@@ -16,6 +16,10 @@
 
 [コンデンサーの特徴と回路をわかりやすく解説](https://www.youtube.com/watch?v=SKpBm7txGTE)
 
+[抵抗、コイル、コンデンサの働き](https://hegtel.com/teiko-koiru-kondensa.html)
+
+[コンデンサとインダクタの違い](https://illustrationprize.com/ja/73-difference-between-capacitor-and-inductor.html)
+
 ### 回路
 
 Physics Videos by Eugene Khutoryansky
@@ -55,5 +59,9 @@ Physics Videos by Eugene Khutoryansky
 [The GPU "Stabbing Guide"](https://www.youtube.com/watch?v=vHGn2pZ0Cv8&ab_channel=ZorasTech)
 
 [A Basic Graphics Card Diagnosis Guide (v2)](https://www.youtube.com/watch?v=erQPrcQnCu0&ab_channel=ZorasTech)
+
+[What is What on a Graphics Card PCB?](https://www.youtube.com/watch?v=DfV0Tz_VRz0&ab_channel=ZorasTech)
+
+[AHOC's How VRMs work video](https://youtu.be/oDRHV3qtSWc)
 
 
