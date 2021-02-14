@@ -54,6 +54,10 @@ Physics Videos by Eugene Khutoryansky
 
 [DroneBot Workshop](https://www.youtube.com/c/Dronebotworkshop1/videos)
 
+### PLL
+
+[PLL設計の基礎](https://kobaweb.ei.st.gunma-u.ac.jp/lecture/20190723_motozawa.pdf)
+
 ### GPU
 
 [The GPU "Stabbing Guide"](https://www.youtube.com/watch?v=vHGn2pZ0Cv8&ab_channel=ZorasTech)
