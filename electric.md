@@ -12,6 +12,14 @@
 
 [オシロスコープの使い方【RIGOL DS1202Z-E】](https://www.youtube.com/watch?v=ny-YVPanOPM&ab_channel=%E3%81%AA%E3%81%8B%E3%81%97%E3%83%BC%E3%81%AE%E9%9B%BB%E5%AD%90%E5%B7%A5%E4%BD%9C%E9%83%A8)
 
+[【電子工作】オシロスコープの基本的な使い方②【RIGOL DS1102Z-E】操作方法・入門編](https://www.youtube.com/watch?v=gUanuYbY0Lw&ab_channel=HARUMISTUDIO)
+
+[プローブ入門セミナー](https://www.youtube.com/watch?v=pafNc5Y9aaU&ab_channel=TeledyneLeCroyJapan)
+
+[オシロスコープ入門セミナー（基礎編） | テレダイン・レクロイ](https://www.youtube.com/watch?v=8_XxV9DXl7Q&ab_channel=TeledyneLeCroyJapan)
+
+[#33 オシロスコープの基本仕様について解説してみた](https://www.youtube.com/watch?v=2rICR2eV1yc&ab_channel=%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%2FEngeer)
+
 ### コンデンサ
 
 [コンデンサーの特徴と回路をわかりやすく解説](https://www.youtube.com/watch?v=SKpBm7txGTE)
