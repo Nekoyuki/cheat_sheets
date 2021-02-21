@@ -16,4 +16,7 @@
 
 [GPU PCB Breakdown: RTX 3090 Kingpin Edition](https://www.youtube.com/watch?v=4gpo3TewxV8&ab_channel=ActuallyHardcoreOverclocking)
 
+### インダクター
+
+[一部製品の表面に印刷されている、"4R7"や"100"などの文字は何を意味していますか？](https://product.tdk.com/info/ja/contact/faq/faq_detail_D/1432565864824.html)
 
