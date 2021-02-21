@@ -66,14 +66,4 @@ Physics Videos by Eugene Khutoryansky
 
 [PLL設計の基礎](https://kobaweb.ei.st.gunma-u.ac.jp/lecture/20190723_motozawa.pdf)
 
-### GPU
-
-[The GPU "Stabbing Guide"](https://www.youtube.com/watch?v=vHGn2pZ0Cv8&ab_channel=ZorasTech)
-
-[A Basic Graphics Card Diagnosis Guide (v2)](https://www.youtube.com/watch?v=erQPrcQnCu0&ab_channel=ZorasTech)
-
-[What is What on a Graphics Card PCB?](https://www.youtube.com/watch?v=DfV0Tz_VRz0&ab_channel=ZorasTech)
-
-[AHOC's How VRMs work video](https://youtu.be/oDRHV3qtSWc)
-
 
