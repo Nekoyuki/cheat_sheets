@@ -62,6 +62,8 @@ Physics Videos by Eugene Khutoryansky
 
 [DroneBot Workshop](https://www.youtube.com/c/Dronebotworkshop1/videos)
 
+[電子回路設計 入門サイト](https://www.kairo-nyumon.com/index.html)
+
 ### PLL
 
 [PLL設計の基礎](https://kobaweb.ei.st.gunma-u.ac.jp/lecture/20190723_motozawa.pdf)
