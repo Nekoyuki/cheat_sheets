@@ -34,6 +34,8 @@ Physics Videos by Eugene Khutoryansky
 
 [AC電圧から DC電圧への整流器](https://www.youtube.com/watch?v=J8A6QUxfk8c)
 
+[AC電流インピーダンス－インダクタ、コンデンサへの交流電圧](https://www.youtube.com/watch?v=zO7RZZW0wSQ&ab_channel=PhysicsVideosbyEugeneKhutoryansky)
+
 パソコンなんでも屋さん
 
 [コンデンサ、トランジスタの仕組みを実践で学ぼう](https://www.youtube.com/watch?v=d8_25ngQf_w)
@@ -68,4 +70,4 @@ Physics Videos by Eugene Khutoryansky
 
 [PLL設計の基礎](https://kobaweb.ei.st.gunma-u.ac.jp/lecture/20190723_motozawa.pdf)
 
-
+[高速シリアル通信におけるジッタの基礎と測定手法の概要](https://www.keysight.com/jp/ja/assets/7018-01829/brochures/5989-8674.pdf)
