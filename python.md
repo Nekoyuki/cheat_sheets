@@ -284,3 +284,5 @@ Out[99]: '"hage"'
 
 ### Links
 [note.nkmk.me](https://note.nkmk.me/)
+
+[pypi.org](http://pypi.org)
