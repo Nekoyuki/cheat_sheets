@@ -88,6 +88,15 @@ sudo reboot
 
 [秋月電子/熱電対/MAX31855](https://akizukidenshi.com/catalog/g/gM-12101/)
 
+[adafruit/Adafruit_CircuitPython_MAX31855](https://github.com/adafruit/Adafruit_CircuitPython_MAX31855)
+
+
+adafruitモジュールをインストールする、、SSLエラーがでるので、```--trusted-host```をくっつける
+
+```bash
+sudo pip3 install adafruit-circuitpython-max31855 --trusted-host pypi.org --trusted-host www.piwheels.org --trusted-host files.pythonhosted.org
+```
+
 
 ### リンク
 
