@@ -1,19 +1,66 @@
 ### 
 
-## Python3にする
+## セットアップ
+
+pyhton3にする
 
 ```bash
 cd /usr/bin
 sudo unlink python
 sudo ln -s python3 python
 ```
-## zshにする
+zshにする
 
 ```bash
-sudo vim /etc/pam.d chsh
+sudo vi /etc/pam.d chsh
 # auth required pam_shells.so # comment out
+
 chsh -s /usr/bin/zsh
 ```
+
+固定IP設定
+
+```bash
+sudo vi /etc/dhcpdc.conf
+interface eth0
+static ip_address=xx.xxx.xxx.xxx/xx
+static routers=xxx.xxx.xxx.xxx
+static domain_name_servers=xxx.xxx.xxx.xxx
+
+hostname変更
+
+```bash
+sudo vi /etc/hostname
+sudo vi /etc/hosts
+hoge.hoge.com
+```
+
+日付更新
+
+```bash
+sudo date --set='yyyy/mm/dd hh:mm:ss'
+```
+
+プロキシ内からaptをできるようにする
+
+```bash
+sudo vi /etc/apt/apt.conf
+Acquire::http::proxy "http://hoge.hoge.com:8080/";
+Acquire::https::proxy "https://hoge.hoge.com:8080/";
+Acquire::ftp::proxy "ftp://hoge.hoge.com:8080/";
+Acquire::socks::proxy "socks://hoge.hoge.com:8080/";
+```
+
+いろいろアップデート
+
+```bash
+sudo apt-get update
+sudo apt-get install -y zsh
+sudo apt-get install -y fzy
+sudo apt-get install -y vim
+sudo reboot
+```
+
 
 ## リンク
 
