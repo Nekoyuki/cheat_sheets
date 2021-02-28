@@ -522,6 +522,41 @@ for j in df_lst:
         se_acc = pd.concat([se_acc, se])
 ```
 
+### 値が一致するセルの数を勘定する
+
+```sum()```を使う。
+
+```values.sum()```を使とデータフレーム全部で勘定する。
+
+```python
+In [18]: df = pd.DataFrame(data=[[1,2,3,4,5],[1,2,3,4,5]])
+
+In [20]: df == 3
+Out[20]:
+       0      1     2      3      4
+0  False  False  True  False  False
+1  False  False  True  False  False
+
+In [21]: (df == 3).sum()
+Out[21]:
+0    0
+1    0
+2    2
+3    0
+4    0
+dtype: int64
+
+In [22]: (df == 3).values
+Out[22]:
+array([[False, False,  True, False, False],
+       [False, False,  True, False, False]])
+
+In [23]: (df == 3).values.sum()
+Out[23]: 2
+```
+[pandasで特定の条件を満たす要素数をカウント（全体、行・列ごと）](https://note.nkmk.me/python-pandas-count-condition/)
+
+
 ### 列や行を追加
 
 [pandas.DataFrameに列や行を追加（assign, appendなど）](https://note.nkmk.me/python-pandas-assign-append/)
