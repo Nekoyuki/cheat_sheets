@@ -90,6 +90,8 @@ sudo reboot
 
 [adafruit/Adafruit_CircuitPython_MAX31855](https://github.com/adafruit/Adafruit_CircuitPython_MAX31855)
 
+[MAX31855 K型熱電対温度センサモジュール](https://strawberry-linux.com/catalog/items?code=12388)
+
 
 adafruitモジュールをインストールする、、SSLエラーがでるので、```--trusted-host```をくっつける
 
