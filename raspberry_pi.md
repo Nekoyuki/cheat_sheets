@@ -88,9 +88,11 @@ sudo reboot
 
 [秋月電子/熱電対/MAX31855](https://akizukidenshi.com/catalog/g/gM-12101/)
 
+[MAX31855 K型熱電対温度センサモジュール](https://strawberry-linux.com/catalog/items?code=12388)
+
 [adafruit/Adafruit_CircuitPython_MAX31855](https://github.com/adafruit/Adafruit_CircuitPython_MAX31855)
 
-[MAX31855 K型熱電対温度センサモジュール](https://strawberry-linux.com/catalog/items?code=12388)
+[AdafruitのMAX31855基板を使った温度測定](https://synapse.kyoto/hard/MAX31855_breakout/page001.html)
 
 
 adafruitモジュールをインストールする、、SSLエラーがでるので、```--trusted-host```をくっつける
