@@ -75,3 +75,5 @@ Physics Videos by Eugene Khutoryansky
 [高速シリアル通信におけるジッタの基礎と測定手法の概要](https://www.keysight.com/jp/ja/assets/7018-01829/brochures/5989-8674.pdf)
 
 [What is Jitter in Fiber Optic Telecom Systems?](https://www.youtube.com/watch?v=K44eRt852vs&ab_channel=FiberOpticsForSaleCo.)
+
+[Class 1. What is jitter - Clock Jitter and Phase-locked Loops tutorial](https://www.youtube.com/watch?v=gWaAn87cDZI&ab_channel=SiliconLabs)
