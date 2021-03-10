@@ -54,6 +54,8 @@ Physics Videos by Eugene Khutoryansky
 
 [XHコネクタ 取り付け方・外し方](https://www.youtube.com/watch?v=-CE_2HUecYM&ab_channel=%E3%82%A4%E3%83%BC%E3%83%95%E3%82%A7%E3%83%AD%E3%83%BC%E3%82%BA)
 
+[【本物】これが有名ジャンカーが修理に使ってる道具だ](https://www.youtube.com/watch?v=pYWbzov2I24&ab_channel=PCJUNK)
+
 ### リンク
 
 [なかしーの電子工作部](https://www.youtube.com/channel/UCBfVxqnPKKJO4l5E1iH3UQg/videos)
@@ -71,3 +73,5 @@ Physics Videos by Eugene Khutoryansky
 [PLL設計の基礎](https://kobaweb.ei.st.gunma-u.ac.jp/lecture/20190723_motozawa.pdf)
 
 [高速シリアル通信におけるジッタの基礎と測定手法の概要](https://www.keysight.com/jp/ja/assets/7018-01829/brochures/5989-8674.pdf)
+
+[What is Jitter in Fiber Optic Telecom Systems?](https://www.youtube.com/watch?v=K44eRt852vs&ab_channel=FiberOpticsForSaleCo.)
