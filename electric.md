@@ -28,6 +28,10 @@
 
 [コンデンサとインダクタの違い](https://illustrationprize.com/ja/73-difference-between-capacitor-and-inductor.html)
 
+### インダクタ
+
+[iインダクタの仕組みを徹底解説](https://www.youtube.com/watch?v=0lNqrjudHy4&ab_channel=%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%82%BB%E3%83%83%E3%83%88)
+
 ### 回路
 
 Physics Videos by Eugene Khutoryansky
