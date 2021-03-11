@@ -76,4 +76,6 @@ Physics Videos by Eugene Khutoryansky
 
 [What is Jitter in Fiber Optic Telecom Systems?](https://www.youtube.com/watch?v=K44eRt852vs&ab_channel=FiberOpticsForSaleCo.)
 
+[位相ジッターとは？](https://www.youtube.com/watch?v=JylNhQaig0c&ab_channel=IDT-ARenesasCompany)
+
 [Class 1. What is jitter - Clock Jitter and Phase-locked Loops tutorial](https://www.youtube.com/watch?v=gWaAn87cDZI&ab_channel=SiliconLabs)
