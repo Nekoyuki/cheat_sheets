@@ -11,6 +11,7 @@ awk 'NR==2 {print $3}'  # 2行目の3番目のやつを出力
 echo "aaa139"|awk '{printf "%1d.%2d\n", substr($1,4,1), substr($1,5,2)}'  # 139を抜き取り1.39と表示
 echo "a_b_c" |awk -F'_' '{print $2}'  # フィールドセパレータ
 echo "30 40 20hage"|awk '{print substr($3, 1, length($3)-4)}'     # 末尾を削る 
+echo "a/b/c"|awk '{cnt=split($0,array,"/");for (i=1;i<=cnt;i++)print array[i]}' # "/"で文字を分割して返す
 ```
 
 ### ループ
