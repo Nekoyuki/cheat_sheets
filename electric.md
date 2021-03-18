@@ -54,6 +54,8 @@ Physics Videos by Eugene Khutoryansky
 
 [Raspberry PiでMAX31855を使って熱電対でデータ取得](https://qiita.com/tm_nagoya/items/501b558dab5f427e1d98)
 
+[MC34063 を使ってスイッチング定電流回路を作ってみる](https://www.youtube.com/watch?v=2hYiPT4RMDg&ab_channel=%E3%82%BC%E3%83%AD%E3%83%BB%E3%82%A4%E3%83%B3%E3%83%94%E3%83%BC%E3%83%80%E3%83%B3%E3%82%B9)
+
 ### 工作
 
 [XHコネクタ 取り付け方・外し方](https://www.youtube.com/watch?v=-CE_2HUecYM&ab_channel=%E3%82%A4%E3%83%BC%E3%83%95%E3%82%A7%E3%83%AD%E3%83%BC%E3%82%BA)
