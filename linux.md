@@ -20,6 +20,7 @@ vi /etc/nsswitch.conf                               # ネットワークデー�
 nslookup
 
 systemctl status network
+systemctl status smbd
 
 systemctl status NetworkManager
 nmcli general hostname hoge                         # ホスト名変更
@@ -59,6 +60,11 @@ DNS1="172.16.0.1"           # DNSサーバ
 [ifconfigの出力結果に書いてあること](https://qiita.com/pe-ta/items/aff8db72530c6baa11b2)
 
 [CentOS7 ifcfg設定](https://qiita.com/liqsuq/items/50173a587029e5d6ca23)
+
+### Samba
+
+[Sambaサーバーの設定手順(Ubuntu18.04)とWindowsからのアクセス方法](https://aquarius-train.hatenablog.com/entry/Samba%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%89%8B%E9%A0%86%E3%81%A8Windows%E3%81%8B%E3%82%89%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%96%B9%E6%B3%95)
+
 
 ### ハードウエハ情報の確認
 基本   
