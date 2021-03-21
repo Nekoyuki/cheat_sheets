@@ -1,4 +1,7 @@
 ### 覚書
+
+```System.out.println();```...プリント文
+
 ```...```... 可変長引数, [link](https://qiita.com/ponsuke0531/items/f0fc923cdbf2ed987013)
 
 ```<>```... ジェネリックス, [ITSakura/Java ジェネリクスのサンプル](https://itsakura.com/java_generics)
