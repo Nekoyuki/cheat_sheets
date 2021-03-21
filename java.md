@@ -31,6 +31,12 @@
 
 ```(type)var```...キャスト[link](https://java-code.jp/66)
 
+```.equals()```...文字列の値を比較
+
+```.get()```...インデックス番号でリストの要素をゲット
+
+```.invoke()```...メッソドのコール
+
 [Java基本文法](https://qiita.com/MewW6m/items/3d438bbdaa4be021db20)
 
 [とほほ](http://www.tohoho-web.com/java/index.htm)
