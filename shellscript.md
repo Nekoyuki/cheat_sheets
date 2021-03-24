@@ -164,6 +164,11 @@ if [[ ${i} =~ ^[0-9]+$ ]];then
     echo "number"
 fi
 ```
+### Commands
+
+```bash
+seq -f "%02g" 10    # 0埋めして、２桁出力
+```
 
 ### リンク
 https://shellscript.sunone.me/
