@@ -20,6 +20,8 @@
 
 [#33 オシロスコープの基本仕様について解説してみた](https://www.youtube.com/watch?v=2rICR2eV1yc&ab_channel=%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%2FEngeer)
 
+[10分でわかるオシロスコープ](https://www.youtube.com/watch?v=hhd4pRudiRU&ab_channel=%E3%83%AD%E3%83%BC%E3%83%87%E3%83%BB%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%83%BB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3-Rohde%26SchwarzJapan)
+
 ### コンデンサ
 
 [コンデンサーの特徴と回路をわかりやすく解説](https://www.youtube.com/watch?v=SKpBm7txGTE)
