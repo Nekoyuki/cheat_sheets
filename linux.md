@@ -81,6 +81,8 @@ lsusb
 
 lsmod               # module確認
 modprobe hoge       # hogeモジュール読み込み
+
+/usr/lib/modules/hoge/kernel/drivers/net/ethernet/realtek/ # Realtek driver
 ```
 
 インストール
