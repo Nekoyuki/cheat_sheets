@@ -126,6 +126,14 @@ In [112]: re.sub('<a.*?>|</a>', '', '<a href="hige">hage hage 12345<a/>')
 Out[112]: 'hage hage 12345'
 ```
 
+置換の再利用
+```python
+In [2]: s = '0(25ppm)'
+
+In [3]: re.sub(r'\d+\((\d+)ppm\)', r'\1', s)
+Out[3]: '25'
+```
+
 ### 内包表記
 ```python
 In [3]: [i for i in range(0,5,1) if i % 2 == 0]
