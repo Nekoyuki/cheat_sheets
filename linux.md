@@ -195,6 +195,9 @@ yum groups install "GNOME Desktop" -y
 date --set @"$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)"
 date -s "$(curl -s --head http://www.google.co.jp | grep ^Date | cut -b 7-)"
 date -s "$(CURL -L "http://www.google.com/" 2>&1 | grep ^Date | cut -d' ' -f2-)"
+
+DATE=`sshpass -p hage ssh hoge -l hoge "date -u +%m%d%H%M%Y"`
+date -u ${DATE}
 ```
 
 [ntpを使わずに時刻を合わせるワンライナー](https://qiita.com/pankona/items/258fed78c168918a8ad2)
