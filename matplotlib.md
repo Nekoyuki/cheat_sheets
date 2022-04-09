@@ -138,6 +138,12 @@ df = pd.DataFrame()
 df.plot(secondary_y=['ltp'])
 ```
 
+### 各列を別々のサブプロットにする
+
+```python
+df.plot(subplots=True)
+```
+
 ### リンク
 
 https://matplotlib.org/3.1.0/index.html
