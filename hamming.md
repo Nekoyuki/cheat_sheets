@@ -1,6 +1,8 @@
 
 ![](hamming.xlsx)
 
+[Hamming code](https://en.bitcoinwiki.org/wiki/Hamming_code#/media/File:Hamming-Code.jpg)
+
 [ECC: Error Correction Code](http://altmo.html.xdomain.jp/src_00/2015_0150/00.html)
 
 [誤り検出符号と誤り訂正符号](http://www.akita-pu.ac.jp/system/elect/ins/kusakari/japanese/teaching/InfoTheo/2009/note/10.pdf)
