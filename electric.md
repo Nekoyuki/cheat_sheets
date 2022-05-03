@@ -8,19 +8,17 @@
 
 [測定器の使い方の基礎](http://www.mech.tohoku-gakuin.ac.jp/rde/contents/sendai/mechatro/archive/RMSeminar_No15_s4.pdf)
 
-[オシロスコープの使い方](https://misoji-engineer.com/archives/oscilloscop-how-to.html)
+[misoji/ オシロスコープの使い方](https://misoji-engineer.com/archives/oscilloscop-how-to.html)
 
-[オシロスコープの使い方【RIGOL DS1202Z-E】](https://www.youtube.com/watch?v=ny-YVPanOPM&ab_channel=%E3%81%AA%E3%81%8B%E3%81%97%E3%83%BC%E3%81%AE%E9%9B%BB%E5%AD%90%E5%B7%A5%E4%BD%9C%E9%83%A8)
+[nakashi/ オシロスコープの使い方【RIGOL DS1202Z-E】](https://www.youtube.com/watch?v=ny-YVPanOPM&ab_channel=%E3%81%AA%E3%81%8B%E3%81%97%E3%83%BC%E3%81%AE%E9%9B%BB%E5%AD%90%E5%B7%A5%E4%BD%9C%E9%83%A8)
 
-[【電子工作】オシロスコープの基本的な使い方②【RIGOL DS1102Z-E】操作方法・入門編](https://www.youtube.com/watch?v=gUanuYbY0Lw&ab_channel=HARUMISTUDIO)
+[harumi/ 【電子工作】オシロスコープの基本的な使い方②【RIGOL DS1102Z-E】操作方法・入門編](https://www.youtube.com/watch?v=gUanuYbY0Lw&ab_channel=HARUMISTUDIO)
 
 [プローブ入門セミナー](https://www.youtube.com/watch?v=pafNc5Y9aaU&ab_channel=TeledyneLeCroyJapan)
 
 [オシロスコープ入門セミナー（基礎編） | テレダイン・レクロイ](https://www.youtube.com/watch?v=8_XxV9DXl7Q&ab_channel=TeledyneLeCroyJapan)
 
-[#33 オシロスコープの基本仕様について解説してみた](https://www.youtube.com/watch?v=2rICR2eV1yc&ab_channel=%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%2FEngeer)
-
-[10分でわかるオシロスコープ](https://www.youtube.com/watch?v=hhd4pRudiRU&ab_channel=%E3%83%AD%E3%83%BC%E3%83%87%E3%83%BB%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%83%BB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3-Rohde%26SchwarzJapan)
+[Engeer/ 【電子工作】13分で理解する！オシロスコープの基本仕様 #33](https://www.youtube.com/watch?v=2rICR2eV1yc&ab_channel=%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%2FEngeer)
 
 ### コンデンサ
 
