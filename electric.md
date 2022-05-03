@@ -85,3 +85,13 @@ Physics Videos by Eugene Khutoryansky
 [位相ジッターとは？](https://www.youtube.com/watch?v=JylNhQaig0c&ab_channel=IDT-ARenesasCompany)
 
 [Class 1. What is jitter - Clock Jitter and Phase-locked Loops tutorial](https://www.youtube.com/watch?v=gWaAn87cDZI&ab_channel=SiliconLabs)
+
+### 矩形波
+
+[sin関数で矩形波をつくる](http://www.maroon.dti.ne.jp/koten-kairo/works/fft/intro2.html)
+
+[EXCELで作る正弦波・のこぎり波・矩形波・三角波！(フーリエ編)](https://nobita-rx7.hatenablog.com/entry/27321577)
+
+[Physics Videos/ フーリエ変換　フーリエ級数　周波数スペクトル](https://www.youtube.com/watch?v=r18Gi8lSkfM&ab_channel=PhysicsVideosbyEugeneKhutoryansky)
+
+[3Blue1Brown/ But what is a Fourier series? From heat flow to drawing with circles | DE4](https://www.youtube.com/watch?v=r6sGWTCMz2k&ab_channel=3Blue1Brown)
