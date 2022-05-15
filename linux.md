@@ -9,14 +9,16 @@ depmod          # カーネルモジュールの依存関係リストを更新
 ```sh
 ifconfig
 ip a
-
 ip route                                            # ルーティングテーブル確認
 
-more /etc/hostname                                  # ホスト名
-more /etc/sysconfig/network-scripts/ifcfg-eth0      # eth0の設定ファイル
+v /etc/hostname                                     # ホスト名
+v /etc/resolv.conf                                  # DNS設定, systemctl restart network
+v /etc/nsswitch.conf                                # ネットワークデータベースの検索順位定義
+v /etc/dhcpd.conf                                   # DHCP設定
+v /etc/ssh/sshd_config                              # SSH設定
+v /etc/sysconfig/iptables                           # IP table
+v /etc/nsswitch.conf                                # DNS設定
 
-vi /etc/resolv.conf                                 # DNS設定, systemctl restart network
-vi /etc/nsswitch.conf                               # ネットワークデータベースの検索順位定義
 nslookup
 
 systemctl status network
@@ -24,11 +26,13 @@ systemctl status smbd
 
 systemctl status NetworkManager
 nmcli general hostname hoge                         # ホスト名変更
+v /etc/hostaname                                    # ホスト名変更直接
 nmcli device                                        # デバイス確認
 ```
 
 ```ifcfg-eth0```の例, DHCPの場合
 ```sh
+m /etc/sysconfig/network-scripts/ifcfg-eth0
 TYPE=Ethernet
 BOOTPROTO=dhcp              # DCHPか固定IPか, dhcp/none
 DEFROUTE=yes
