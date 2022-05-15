@@ -2,7 +2,6 @@
 ```sh
 hostnamectl     # カーネルやOS情報
 uname -r        # カーネルバージョン表示
-depmod          # カーネルモジュールの依存関係リストを更新
 ```
 
 ### ネットワーク環境の確認
@@ -10,6 +9,7 @@ depmod          # カーネルモジュールの依存関係リストを更新
 ifconfig
 ip a
 ip route                                            # ルーティングテーブル確認
+nslookup
 
 v /etc/hostname                                     # ホスト名
 v /etc/resolv.conf                                  # DNS設定, systemctl restart network
@@ -17,16 +17,18 @@ v /etc/nsswitch.conf                                # ネットワークデー�
 v /etc/dhcpd.conf                                   # DHCP設定
 v /etc/ssh/sshd_config                              # SSH設定
 v /etc/sysconfig/iptables                           # IP table
-v /etc/nsswitch.conf                                # DNS設定
 
-nslookup
-
+l /etc/systemd/system                               # サービスの設定ファイル
 systemctl status network
 systemctl status smbd
-
+systemctl status dhcpd
+systemctl status sshd
 systemctl status NetworkManager
+systemctl list-units --all  --type=service          # 全てのサービスの状態を表示する
+journalctl -u dhcpd.service                         # DHCPのログ表示
+journalctl -k                                       # カーネルメッセージだけを表示する
+
 nmcli general hostname hoge                         # ホスト名変更
-v /etc/hostaname                                    # ホスト名変更直接
 nmcli device                                        # デバイス確認
 ```
 
