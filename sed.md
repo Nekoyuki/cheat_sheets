@@ -1,10 +1,11 @@
 ### 基本
 
 ```sh
-echo "hoge1 hoge2"|sed -r 's/hoge(.) hoge(.)/hige\1 hige\2/' # 正規表現 パターン再利用
-echo "hage.sh"|sed 's/\.[^\.]*$//' # suffix (.*) を削る
-echo "a b c"|sed -e 's/a/hage/' -e 's/b/hige/' -e 's/c/hoge/' # 複数の文字の変換
-echo "hage=neko hige=mike"|sed -r 's/.* hige=([a-zA-Z.0-9]+).*/\1/'  # 空白か行末までのマッチ
+echo "hoge1 hoge2" |sed -r 's/hoge(.) hoge(.)/hige\1 hige\2/' # 正規表現 パターン再利用
+echo "hage.sh" |sed 's/\.[^\.]*$//' # suffix (.*) を削る
+echo "a b c" |sed -e 's/a/hage/' -e 's/b/hige/' -e 's/c/hoge/' # 複数の文字の変換
+echo "hage=neko hige=mike" |sed -r 's/.* hige=([a-zA-Z.0-9]+).*/\1/'  # 空白か行末までのマッチ
+cat hage.txt |sed '/hage/d'     # マッチする行の削除
 ```
 
 ### 正規表現
