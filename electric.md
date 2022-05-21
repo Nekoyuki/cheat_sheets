@@ -95,3 +95,9 @@ Physics Videos by Eugene Khutoryansky
 [Physics Videos/ フーリエ変換　フーリエ級数　周波数スペクトル](https://www.youtube.com/watch?v=r18Gi8lSkfM&ab_channel=PhysicsVideosbyEugeneKhutoryansky)
 
 [3Blue1Brown/ But what is a Fourier series? From heat flow to drawing with circles | DE4](https://www.youtube.com/watch?v=r6sGWTCMz2k&ab_channel=3Blue1Brown)
+
+[Interview Questions - output of HPF and LPF from Square Wave Input](https://www.youtube.com/watch?v=O_vJulZUSi8&ab_channel=ElectricalEngineering)
+
+[Why DFE?](https://www.youtube.com/watch?v=KiWziOm_nHg&ab_channel=CircuitImage)
+
+[What is Bandwidth? (Bandwidth and Signal Processing)](https://www.youtube.com/watch?v=whUkZUORix0&t=268s&ab_channel=Academia)
