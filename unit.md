@@ -7,6 +7,10 @@
 |---|---|
 |1Hz|1s|
 
+|Frequency|Period s|Period ms|
+|---|---|---|
+|1Hz|1s|1,000ms|
+
 |Frequency|Period s|Period ms|Period us|Period ns|Period ps|
 |---|---|---|---|---|---|---|
 |1Hz|1s|1,000ms|1,000,000us|1,000,000,000ns|1,000,000,000,000ps|
