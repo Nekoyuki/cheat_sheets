@@ -6,6 +6,10 @@
 |Frequency|Period s|Period ms|Period us|Period ns|Period ps|
 |---|---|---|---|---|---|---|
 |1Hz|1s|1,000ms|1,000,000us|1,000,000,000ns|1,000,000,000,000ps|
+
+|Frequency|Period s|Period ms|Period us|Period ns|Period ps|
+|---|---|---|---|---|---|---|
+|1Hz|1s|1,000ms|1,000,000us|1,000,000,000ns|1,000,000,000,000ps|
 |1KHz|0.001s|1ms|1,000us|1,000,000ns|1,000,000,000ps|
 |1MHz|1.E-6s|0.001ms|1us|1,000ns|1,000,000ps|
 |1GHz|1.E-9s|1.E-6ms|0.001us|1ns|1,000ps|
