@@ -3,18 +3,6 @@
 波が１回上下するのにかかる時間 > 周期(T) 単位は秒(s)。   
 １秒間に上下する波の回数 > 周波数(f) 単位はヘルツ(Hz)。   
 
-|Frequency|Period s|
-|---|---|
-|1Hz|1s|
-
-|Frequency|Period s|Period ms|
-|---|---|---|
-|1Hz|1s|1,000ms|
-
-|Frequency|Period s|Period ms|Period us|Period ns|Period ps|
-|---|---|---|---|---|---|---|
-|1Hz|1s|1,000ms|1,000,000us|1,000,000,000ns|1,000,000,000,000ps|
-
 |Frequency|Period s|Period ms|Period us|Period ns|Period ps|
 |---|---|---|---|---|---|
 |1Hz|1s|1,000ms|1,000,000us|1,000,000,000ns|1,000,000,000,000ps|
