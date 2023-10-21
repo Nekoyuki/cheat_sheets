@@ -2,6 +2,10 @@
 
 ```電流測定で電圧を測る```はやっちゃだめだ！
 
+### Links
+
+[Links](https://1drv.ms/x/s!AvWS9M0k1Aa7o2QrLXRaY_BQ5wZY?e=vm8BPV)
+
 ### テスタ
 
 [テスターの基礎講座](https://www.monotaro.com/s/pages/readingseries/testerkiso/)
