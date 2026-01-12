@@ -4,7 +4,9 @@
 
 ### Links
 
-[Links](https://1drv.ms/x/s!AvWS9M0k1Aa7o2QrLXRaY_BQ5wZY?e=vm8BPV)
+[Excel_Links](https://1drv.ms/x/s!AvWS9M0k1Aa7o2QrLXRaY_BQ5wZY?e=vm8BPV)
+
+[PPT_Links](https://1drv.ms/p/c/bb06d424cdf492f5/IQD1kvTNJNQGIIC7oREAAAAAAZff7rY9HN6W_wPXFhahs6U?e=M5lWIA)
 
 ### テスタ
 
